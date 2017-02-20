@@ -6,6 +6,7 @@ var Main = React.createClass({
     return (
       <div className=''>
         Hello World!
+        <img src={require('../assets/vladspeaking.jpg')}/>
       </div>
     )
   }

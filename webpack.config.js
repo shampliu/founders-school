@@ -18,6 +18,7 @@ module.exports = {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", query: { presets:['react']}},
       {test: /\.scss$/, loaders: ExtractTextPlugin.extract('css-loader!sass-loader')},
+      {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
     ]
   },
   plugins: [
