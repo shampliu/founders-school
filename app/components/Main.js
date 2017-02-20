@@ -1,4 +1,5 @@
 var React = require('react');
+require('../scss/Main.scss');
 
 var Main = React.createClass({
   render: function () {
