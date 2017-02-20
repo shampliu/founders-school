@@ -1,0 +1,17 @@
+{
+  "name": "founders-school",
+  "description": "\"\"",
+  "main": "index.js",
+  "authors": [
+    "Chang Liu <shampliu@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/shampliu/founders-school",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
