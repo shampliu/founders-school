@@ -1,11 +1,7 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var ReactRouter = require('react-router');
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-var IndexRoute = ReactRouter.IndexRoute;
-var Main = require('./components/Main');
-var hashHistory = ReactRouter.hashHistory;
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Route, Router, IndexRoute, hashHistory } from 'react-router';
+import Main from './components/Main';
 
 ReactDOM.render(
   <Router history={hashHistory}>
