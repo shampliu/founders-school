@@ -81,38 +81,26 @@ const speakers = {
   'vlad': {
     'name': 'Vladimir Tenev',
     'title': 'CEO, Robinhood',
-    'description': '',
+    'description': 'Founder and CEO of Robinhood, gave the keynote talk at last \
+    year\'s founders school',
     'uri': '../../assets/headshots/vlad.png'
   },
 };
 
-function createGrid(speakersInRow) {
-  var row = [];
+function createGrid() {
   var grid = [];
-  var numTilesInCurRow = 0;
-  var rowKey = '';
 
+  var numSpeakers = 0;
   for (var speaker in speakers) {
     var speakerData = speakers[speaker]; 
     var key = speakerData['name'];
 
-    row.push(
+    grid.push(
       <SpeakerTile key={key} name={key} title={speakerData['title']}
-       uri={speakerData['uri']} />
+                   uri={speakerData['uri']} index={numSpeakers}
+                   description={speakerData['description']}/>
     );
-    rowKey += key;
-    numTilesInCurRow++;
-
-    if (numTilesInCurRow == speakersInRow) {
-      grid.push(
-        <div key={rowKey} style={{float: "none", width: "100%"}}>
-          {row}
-        </div>
-      );
-      row = [];
-      numTilesInCurRow = 0;
-      rowKey = '';
-    }
+    numSpeakers++;
   }
 
   return grid;
@@ -124,9 +112,13 @@ export default class SpeakerGrid extends React.Component {
       <div className="speakers">
         <div className="speakerGridTitle">Speakers</div>
         <div className="speakerGrid">
-          {createGrid(3)}
+          {createGrid()}
         </div>
       </div>
     );
   }
 }
+
+/*
+TODO: make responsive for mobile
+*/
