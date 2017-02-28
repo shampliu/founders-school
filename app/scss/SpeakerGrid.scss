@@ -1,37 +1,9 @@
-/* Sass magic to center (https://www.sitepoint.com/centering-with-sass/) */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400);
-
-@mixin absCenter($width: null, $height: null) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  @if not $width and not $height {
-    transform: translate(-50%, -50%);
-  } @else if $width and $height {
-    width: $width;
-    height: $height;
-    margin: -($width / 2) #{0 0} -($height / 2);
-  } @else if not $height {
-    width: $width;
-    margin-left: -($width / 2);
-    transform: translateY(-50%);
-  } @else {
-    height: $height;
-    margin-top: -($height / 2);
-    transform: translateX(-50%);
-  }
-}
-
-@mixin horizCenter {
-  position: relative;
-  margin: 0 auto;
-}
+@import './Main.scss';
 
 .speakerGridTitle {
   color: white;
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $sitefont;
   font-weight: 400;
   text-align: right;
   margin: 25px 35% 25px 25px;
@@ -40,4 +12,12 @@
 .speakerGrid {
   @include horizCenter;
   width: 90%;
+  height: auto;
+ 
+  &::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+ }
 }
