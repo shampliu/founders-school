@@ -1,0 +1,23 @@
+@import './Main.scss';
+
+.speakerGridTitle {
+  color: white;
+  font-size: 30px;
+  font-family: $sitefont;
+  font-weight: 400;
+  text-align: right;
+  margin: 25px 35% 25px 25px;
+}
+
+.speakerGrid {
+  @include horizCenter;
+  width: 90%;
+  height: auto;
+ 
+  &::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+ }
+}

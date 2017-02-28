@@ -1,14 +1,13 @@
-var React = require('react');
-require('../scss/Main.scss');
+import React from 'react';
+import SpeakerGrid from './SpeakerGrid';
+import '../scss/Main.scss';
 
-var Main = React.createClass({
-  render: function () {
+export default class Main extends React.Component {
+  render() {
     return (
       <div className=''>
-        Hello World!
+        <SpeakerGrid />
       </div>
     )
   }
-});
-
-module.exports = Main;
+}
