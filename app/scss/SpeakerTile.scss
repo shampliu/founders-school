@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400);
+
+.speakerTile {
+  position: relative;
+  float: left;
+  width: 33%;
+  height: 200px;
+  margin: 1px;
+  background-color: #002D47; 
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+  &:hover .speakerImg:before,
+  &:focus .speakerImg:before {
+    display: block;
+    transition: all .6s;
+  }
+
+  &:hover .speakerImg {
+    transform: scale(1.3);
+  }
+
+  .speakerImg {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: 50% 35% !important;
+    background-repeat: no-repeat !important;
+    transform: scale(1);
+    transition: all .6s;
+
+    &:before {
+      content: "";
+      display: none;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(52, 73, 94, .45);
+    }
+  }
+
+  p {
+    color: white;
+    z-index: 100;
+    padding: 7px;
+  }
+
+  .speakerName {
+    position: absolute;
+    bottom: 42px;
+    font-size: 18px;
+    background: rgba(255,70,70,1);
+  }
+
+  .speakerTitle {
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+    background: rgba(70,70,255,1);
+  }
+}
