@@ -58,7 +58,7 @@ class Description extends React.Component {
         <div className="description">
           <h1>Tech Meets <span>Entrepreneurship</span></h1>
           <p>SoCal’s Largest University Entrepreneurship Conference</p>
-          <h3>MAY 7, 9AM - 7PM</h3>
+          <h3><i className="fa fa-calendar-check-o"></i>&nbsp;MAY 7, 9AM - 7PM</h3>
           <button>Apply</button> <button>Sponsor</button>
         </div>
       </div>
