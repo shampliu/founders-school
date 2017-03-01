@@ -1,0 +1,16 @@
+$blue: rgb(55, 70, 103);
+
+div.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+ul.inline {
+  list-style-type: none;
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+}

@@ -6,7 +6,7 @@ class Navbar extends React.Component {
     return (
       <div className="nav">
         <div className="nav-inner">
-          <ul className="nav-links">
+          <ul className="nav-links inline">
             <a href="">
               <li>About</li>
             </a>
@@ -43,10 +43,10 @@ class Logo extends React.Component {
 class HeaderWrapper extends React.Component {
   render() {
     return (
-      <div className="header-wrapper">
+      <header className="header-wrapper">
         <Navbar />
         <Title />
-      </div>
+      </header>
     )
   }
 }
