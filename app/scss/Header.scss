@@ -1,0 +1,77 @@
+@import 'reset';
+@import 'mixins';
+
+*, body {
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+
+  .header-wrapper {
+    background: red;
+    width: 100%;
+    height: 100vh;
+    background: url('/app/assets/vladspeaking.jpg');
+    background-size: cover;
+
+    &:before {
+      content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    	opacity: .6;
+    }
+
+    .title-wrapper {
+      width: 60%;
+      height: 400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      .logo {
+        z-index: 10;
+        position: relative;
+
+      }
+
+      .description {
+        height: 100%;
+        
+      }
+    }
+
+    .nav {
+      width: 100%;
+      height: 75px;
+      display: block;
+      position: fixed;
+
+      .nav-inner {
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+        background: red;
+        padding: 14px 0;
+        display: flex;
+        justify-content: space-around;
+
+        ul.nav-links {
+          list-style-type: none;
+          display: inline-block;
+          height: 50px;
+          line-height: 50px;
+          text-transform: uppercase;
+          a {
+            display: inline-block;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

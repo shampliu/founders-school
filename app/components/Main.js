@@ -1,15 +1,11 @@
 var React = require('react');
-require('../scss/Main.scss');
+import Header from './Header';
 
-var Main = React.createClass({
-  render: function () {
+export default class Main extends React.Component {
+  render() {
     return (
-      <div className=''>
-        Hello World!
-        <img src={require('../assets/vladspeaking.jpg')}/>
-      </div>
+
+      <Header />
     )
   }
-});
-
-module.exports = Main;
+};
