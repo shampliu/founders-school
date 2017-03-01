@@ -1,0 +1,125 @@
+@import './Main.scss';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400);
+
+/*
+TODO:
+  * make responsive with media queries
+  * get box-shadow to work right
+*/
+
+$tileWidth: 43%;
+$tileHeight: 225px;
+$tileBorderRadius: 6px;
+
+.speakerTile {
+  position: relative;
+  float: left;
+  width: $tileWidth;
+  height: $tileHeight;
+  background-color: $bgcolor;
+  overflow: visible;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  perspective: $tileWidth;
+/*
+    0 15px 35px rgba(50,50,93,.1),
+    0 5px 15px rgba(200,200,200,.1);
+    box-shadow:
+      0 15px 35px rgba(50,50,93,.2),
+      0 5px 15px rgba(0,0,0,.09) !important;
+*/
+
+  &:active .flipper {
+    transform: rotateY(180deg);
+    box-shadow: none;
+  }
+
+  .flipper, .front, .back {
+    width: 100%;
+    height: $tileHeight;
+  }
+
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow:
+      0 15px 35px rgba(50,50,93,.2),
+      0 5px 15px rgba(0,0,0,.09) !important;
+  }
+
+  .front {
+    z-index: 2;
+    border-radius: $tileBorderRadius;
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    padding: 7px -40px;
+    background-color: #EEEDDE;
+    border-radius: $tileBorderRadius;
+    transform: rotateY(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .speakerImg:before,
+  &:focus .speakerImg:before {
+    display: block;
+    transition: all .6s;
+  }
+
+  &:hover .speakerImg {
+    transform: scale(1);
+  }
+
+  .speakerImg {
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    background-size: cover !important;
+    background-position: 50% 35% !important;
+    background-repeat: no-repeat !important;
+    transform: scale(1);
+    transition: all .6s;
+    border-radius: $tileBorderRadius;
+
+    &:before {
+      content: "";
+      display: none;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(52, 73, 94, .25);
+      border-radius: $tileBorderRadius;
+    }
+  }
+
+  p {
+    color: white;
+    z-index: 100;
+    padding: 7px;
+  }
+
+  .speakerName {
+    position: absolute;
+    bottom: 42px;
+    font-size: 18px;
+    background: rgba(255,70,70,1);
+  }
+
+  .speakerTitle {
+    position: absolute;
+    bottom: 10px;
+    font-size: 13px;
+    background: rgba(70,70,255,1);
+  }
+}
