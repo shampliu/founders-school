@@ -1,11 +1,11 @@
-@import 'reset';
-@import 'mixins';
+// @import 'reset';
+// @import 'mixins';
+//
+// *, body {
+//   box-sizing: border-box;
+// }
 
 $blue: rgb(55, 70, 103);
-
-*, body {
-  box-sizing: border-box;
-}
 
 #app {
   width: 100%;
@@ -17,6 +17,10 @@ $blue: rgb(55, 70, 103);
     height: 100vh;
     background: url('/app/assets/vladspeaking.jpg');
     background-size: cover;
+    background-attachment: fixed;
+
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 97%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 97%);
 
     &:before {
       content: '';
@@ -100,6 +104,7 @@ $blue: rgb(55, 70, 103);
       height: 75px;
       display: block;
       position: fixed;
+      z-index: 11;
 
       .nav-inner {
         width: 80%;
