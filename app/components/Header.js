@@ -8,16 +8,19 @@ class Navbar extends React.Component {
         <div className="nav-inner">
           <ul className="nav-links">
             <a href="">
-              <li>Home</li>
+              <li>About</li>
+            </a>
+            <a href="">
+              <li>Speakers</li>
             </a>
             <a href="">
               <li>Sponsors</li>
             </a>
             <a href="">
-              <li>Sponsors</li>
+              <li>FAQ</li>
             </a>
             <a href="">
-              <li>Sponsors</li>
+              <li>Schedule</li>
             </a>
           </ul>
 
@@ -43,7 +46,6 @@ class HeaderWrapper extends React.Component {
       <div className="header-wrapper">
         <Navbar />
         <Title />
-
       </div>
     )
   }
@@ -52,8 +54,13 @@ class HeaderWrapper extends React.Component {
 class Description extends React.Component {
   render() {
     return (
-      <div className="description">
-        
+      <div className="description-wrapper">
+        <div className="description">
+          <h1>Tech Meets <span>Entrepreneurship</span></h1>
+          <p>SoCal’s Largest University Entrepreneurship Conference</p>
+          <h3>MAY 7, 9AM - 7PM</h3>
+          <button>Apply</button> <button>Sponsor</button>
+        </div>
       </div>
     )
   }
@@ -74,9 +81,6 @@ export default class Header extends React.Component {
   render() {
     return (
       <HeaderWrapper />
-
-
     )
-
   }
 }
