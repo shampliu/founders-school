@@ -2,6 +2,10 @@ node_modules/*
 bower_components/*
 sass-cache/*
 dist
+<<<<<<< HEAD
 
 .DS_STORE
 TODO
+=======
+.DS_Store
+>>>>>>> header

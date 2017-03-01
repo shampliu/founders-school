@@ -1,33 +1,6 @@
 /* Sass magic to center (https://www.sitepoint.com/centering-with-sass/) */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400);
 
-@mixin absCenter($width: null, $height: null) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  @if not $width and not $height {
-    transform: translate(-50%, -50%);
-  } @else if $width and $height {
-    width: $width;
-    height: $height;
-    margin: -($width / 2) #{0 0} -($height / 2);
-  } @else if not $height {
-    width: $width;
-    margin-left: -($width / 2);
-    transform: translateY(-50%);
-  } @else {
-    height: $height;
-    margin-top: -($height / 2);
-    transform: translateX(-50%);
-  }
-}
-
-@mixin horizCenter {
-  position: relative;
-  margin: 0 auto;
-}
-
 /* background: #002D47 */;
 $bgcolor: #EFEFEF;
 $sitefont: 'Open Sans', sans-serif;
@@ -36,9 +9,11 @@ $phone: "only screen and (max-width : 320px)";
 $tablet: "only screen and (min-width: 768px) and (max-width: 1023px)";
 $desktop: "only screen and (min-width: 1024px)";
 
-html, body {
-  margin: 0;
-  width: 100%;
+@import 'reset';
+@import 'mixins';
+
+*, html, body {
+  box-sizing: border-box;
 }
 
 body {
