@@ -11,9 +11,13 @@ export default class Footer extends React.Component {
               <img src="/app/assets/logo.svg" alt=""/>
             </div>
             <div className="hosts">
-              Hosted by UCLA <a href="">ACM</a> & <a href="">UPE</a>
+              Hosted by
+              <br/>
+              UCLA <a href="">ACM</a> & <a href="">UPE</a>
             </div>
             <div className="social">
+              Connect with us
+              <br/>
               <i className="fa fa-facebook"></i>
               <i className="fa fa-twitter"></i>
               <i className="fa fa-envelope"></i>
