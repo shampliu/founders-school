@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
             <div className="hosts">
               Hosted by
               <br/>
-              UCLA <a href="">ACM</a> & <a href="">UPE</a>
+              <strong>UCLA <a href="">ACM</a> & <a href="">UPE</a></strong>
             </div>
             <div className="social">
               Connect with us

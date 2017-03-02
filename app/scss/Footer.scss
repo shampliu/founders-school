@@ -1,12 +1,17 @@
 @import "common";
 
+$text: #efefef;
+$accent: #002c4e;
+
 footer.footer {
-  background: $blue;
-  color: white;
+  background: $accent;
+
   div.container {
     display: flex;
     flex-flow: row wrap;
     padding: 1.25em 0;
+    color: $text;
+    line-height: 22px;
 
     .left {
       padding: 1em 0;
@@ -29,6 +34,12 @@ footer.footer {
       .hosts {
         padding: 0 1.25em;
         // flex: 1;
+        a {
+          text-decoration: none;
+          color: $accent;
+          background: yellow;
+          padding: 0 3px;
+        }
       }
       .social {
         padding: 0 1.25em;
@@ -48,7 +59,7 @@ footer.footer {
       ul {
         margin-left: auto;
         li {
-          color: white;
+          color: $text;
           margin-left: 1em;
         }
       }

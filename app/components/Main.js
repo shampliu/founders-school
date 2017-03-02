@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import SpeakerGrid from './SpeakerGrid';
 import Header from './Header';
 import About from './About';
@@ -7,7 +7,7 @@ import Footer from './Footer';
 import '../scss/Main.scss';
 
 
-export default class Main extends React.Component {
+export default class Main extends Component {
   render() {
     return (
       <div className=''>
