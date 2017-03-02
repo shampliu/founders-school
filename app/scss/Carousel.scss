@@ -1,0 +1,21 @@
+.carousel-wrapper {
+  width: 100%;
+  position: relative;
+  // overflow: hidden;
+  height: 450px;
+  div {
+    position: absolute;
+    top: 0;
+    width: 1400px;
+    display: inline-block;
+    overflow: visible;
+
+    img {
+      display: inline-block;
+    }
+
+    &:nth-child(2) {
+      left: 1400px;
+    }
+  }
+}
