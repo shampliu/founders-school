@@ -14,6 +14,7 @@ export default class Main extends Component {
         <Header />
         <About />
         <SpeakerGrid />
+        <Carousel />
         <Footer />
       </div>
     )
