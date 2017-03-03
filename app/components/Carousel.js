@@ -6,36 +6,57 @@ export default class Carousel extends React.Component {
     super(props);
     this.state = {
       interval: null,
-      left: 0
+      items: [{
+        "class" : "one",
+        "left" : 0
+      }, {
+        "class" : "two",
+        "left" : 1400
+      }, {
+        "class" : "one",
+        "left" : 2800
+      }]
     };
   }
-  componentDidMount() {
-    let carousel = document.querySelector('section.carousel-wrapper');
+
+  startInterval() {
     let slide = setInterval(function() {
-      // console.log(carousel)
-      // console.log(this.state.left)
 
-      this.setState({
-        left: this.state.left - 1
-      })
+      let items = this.state.items.map(item => {
+        item.left -= 2;
+        if (item.left <= -1400) {
+          item.class = item.class == "one" ? "two" : "one";
+          item.left = 2800;
+        }
+        return item
+      });
 
-      carousel.style.transform = `translateX(${this.state.left}px)`;
+      this.setState({ items: items });
+
     }.bind(this), 30)
+
     this.setState({
       interval: slide
     })
+  }
+
+  componentDidMount() {
+    this.startInterval();
+    document.querySelector('.carousel-wrapper').addEventListener('mouseover', function() {
+      clearInterval(this.state.interval);
+    }.bind(this));
+    document.querySelector('.carousel-wrapper').addEventListener('mouseout', function() {
+      this.startInterval();
+    }.bind(this));
   }
 
   render() {
     return (
 
       <section className="carousel-wrapper">
-        <div>
-          <img src="/app/assets/carousel-1.png" alt=""/>
-        </div>
-        <div>
-          <img src="/app/assets/carousel-2.png" alt=""/>
-        </div>
+        { this.state.items.map((item, i) => {
+          return <div key={i} className={item.class} style={{left: item.left + "px"}}></div>
+        })}
       </section>
     )
   }
