@@ -23,7 +23,7 @@ export default class Carousel extends React.Component {
     let slide = setInterval(function() {
 
       let items = this.state.items.map(item => {
-        item.left -= 2;
+        item.left -= 1;
         if (item.left <= -1400) {
           item.class = item.class == "one" ? "two" : "one";
           item.left = 2800;

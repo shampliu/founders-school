@@ -4,6 +4,14 @@
 
 Created with [React.js](https://facebook.github.io/react/).
 
+## To-Do
+* add color overlay to Carousel
+* add apply button to footer links
+* add correct links to footer buttons   
+* push to gh-pages
+* Sponsors page
+* FAQ?
+
 ## React Component Hierarchy
 ```
   App
@@ -40,4 +48,3 @@ Created with [React.js](https://facebook.github.io/react/).
 
 ## Design
 * Motifs? compass, globe
-
