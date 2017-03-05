@@ -5,54 +5,16 @@
 Created with [React.js](https://facebook.github.io/react/).
 
 ## To-Do
-* Sponsors page
-* FAQ?
 * Responsiveness
-* animations on scroll
+* animations on scroll (only for About section)
 * change typography
+* add section links with smoothscroll
+* animate header, make logo pulse after
+* decide what to put on left side of About (explore/compass/globe motif || event info)
+* Float navbar for mobile (hamburger menu)
+* animated Speakers background
+* SpeakerTile "work" png animation
 
 * Define color palette in \_common.scss or Main.scss
-* Float the navbar? absolute position it? or maybe make some little icon
-on the top right that can expand or something especially on mobile)
-* make responsive for mobile
-* add section links
-* motion graphics
-* microinteractions/animations
-* split about section like F8?
-
-## React Component Hierarchy
-```
-  App
-    Navbar
-    Header
-      Logo
-      Description
-        Button (Participants/Sponsor)
-    ArrowTrailThingy
-    About
-      Main
-      Side
-    SpeakersGrid
-      SpeakerTile
-        SpeakerNameLabel
-        SpeakerBlurb
-    Schedule
-      Timeline
-        EventBlock
-    Sponsors
-      SponsorTile
-    PhotoCarousel
-      CarouselImage
-    Footer
-
-  Scrolling?
-    react-css-transition-group
-    https://github.com/react-component/scroll-anim
-    https://www.npmjs.com/package/react-scroll
-
-  Animation
-    react-motion
-```
-
-## Design
-* Motifs? compass, globe
+* Sponsors page
+* FAQ?
