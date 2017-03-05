@@ -6,7 +6,7 @@ import '../scss/SpeakerTile.scss';
 export default class SpeakerTile extends React.Component {
   render() {
     return (
-      <div className="speakerTile">
+      <div className="speaker-tile">
         <div className="flipper">
           <SpeakerTileFront name={this.props.name} title={this.props.title}
                             uri={this.props.uri} />
