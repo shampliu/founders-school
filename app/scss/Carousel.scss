@@ -16,18 +16,6 @@
     background-size: 1400px 450px;
     height: 450px;
 
-    &.one {
-      background-image: url('/assets/carousel-1.png');
-    }
-
-    &.two {
-      background-image: url('/assets/carousel-2.png');
-    }
-
-    // img {
-    //   display: inline-block;
-    // }
-
     &:nth-child(2) {
       left: 1400px;
     }

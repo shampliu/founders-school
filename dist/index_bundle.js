@@ -11729,7 +11729,7 @@ class Carousel extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
       'section',
       { className: 'carousel-wrapper' },
       this.state.items.map((item, i) => {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: i, className: item.class, style: { left: item.left + "px" } });
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { key: i, className: item.class, style: { left: item.left + "px", backgroundImage: item.class == 'one' ? 'url(\'./assets/carousel-1.png\')' : 'url(\'./assets/carousel-2.png\')' } });
       })
     );
   }
@@ -11763,7 +11763,7 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'logo' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/logo.svg', alt: '' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './assets/logo.svg', alt: '' })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
@@ -11966,11 +11966,20 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 }
 
 class Logo extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isAnimated: false
+    };
+  }
+
+  componentDidMount() {}
+
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'object',
-      { className: 'logo', data: '/assets/logo.svg', type: 'image/svg+xml' },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/logo.svg' })
+      { className: 'logo', data: './assets/logo.svg', type: 'image/svg+xml' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: './assets/logo.svg' })
     );
   }
 }
@@ -11979,7 +11988,7 @@ class HeaderWrapper extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Compon
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'header',
-      { className: 'header-wrapper' },
+      { className: 'header-wrapper', style: { backgroundImage: 'url(\'./assets/vladspeaking.jpg\')' } },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Navbar, null),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Title, null)
     );
@@ -12328,74 +12337,74 @@ const speakers = {
     'name': 'Ajay Kamat',
     'title': 'Partner, Pejman Mar Ventures',
     'description': '',
-    'uri': '/assets/headshots/ak.jpg'
+    'uri': './assets/headshots/ak.jpg'
   },
   'fb': {
     'name': 'Forrest Browning',
     'title': 'Co-founder, StacksWare',
     'description': '',
-    'uri': '/assets/headshots/fb.jpg'
+    'uri': './assets/headshots/fb.jpg'
   },
   'jb': {
     'name': 'Justin Brezhnev',
     'title': 'Executive Director, Hacker Fund',
     'description': '',
-    'uri': '/assets/headshots/jb.jpg'
+    'uri': './assets/headshots/jb.jpg'
   },
   'kh': {
     'name': 'Kevin Hale',
     'title': 'Partner, Y Combinator',
     'description': '',
-    'uri': '/assets/headshots/kh.jpg'
+    'uri': './assets/headshots/kh.jpg'
   },
   'ma': {
     'name': 'Mahbod Moghadam',
     'title': 'Founder, Rap Genius',
     'description': '',
-    'uri': '/assets/headshots/ma.jpg'
+    'uri': './assets/headshots/ma.jpg'
   },
   'mh': {
     'name': 'Michael Hartl',
     'title': 'Author of Ruby on Rails Tutorial',
     'description': '',
-    'uri': '/assets/headshots/mh.jpg'
+    'uri': './assets/headshots/mh.jpg'
   },
   'pb': {
     'name': 'Peter Brack',
     'title': 'Partner, Mucker Capital',
     'description': '',
-    'uri': '/assets/headshots/pb.jpg'
+    'uri': './assets/headshots/pb.jpg'
   },
   'sf': {
     'name': 'Shahin Farshchi',
     'title': 'Partner, Lux Capital',
     'description': '',
-    'uri': '/assets/headshots/sf.jpg'
+    'uri': './assets/headshots/sf.jpg'
   },
   'sl': {
     'name': 'Stephanie Lin',
     'title': 'Founder, Sandbox: Startup Stories',
     'description': '',
-    'uri': '/assets/headshots/sl.jpg'
+    'uri': './assets/headshots/sl.jpg'
   },
   'tl': {
     'name': 'Tiffany Li',
     'title': 'Investor, Anthos',
     'description': '',
-    'uri': '/assets/headshots/tl.jpg'
+    'uri': './assets/headshots/tl.jpg'
   },
   'tr': {
     'name': 'Tess Rinearson',
     'title': 'Software Engineer, Chain',
     'description': '',
-    'uri': '/assets/headshots/tr.jpg'
+    'uri': './assets/headshots/tr.jpg'
   },
   'vlad': {
     'name': 'Vladimir Tenev',
     'title': 'CEO, Robinhood',
     'description': 'Founder and CEO of Robinhood, gave the keynote talk at last \
     year\'s founders school',
-    'uri': '/assets/headshots/vlad.png'
+    'uri': './assets/headshots/vlad.png'
   }
 };
 

@@ -55,7 +55,7 @@ export default class Carousel extends React.Component {
 
       <section className="carousel-wrapper">
         { this.state.items.map((item, i) => {
-          return <div key={i} className={item.class} style={{left: item.left + "px"}}></div>
+          return <div key={i} className={item.class} style={{left: item.left + "px", backgroundImage: item.class == 'one' ? 'url(\'./assets/carousel-1.png\')': 'url(\'./assets/carousel-2.png\')' }}></div>
         })}
       </section>
     )
