@@ -4,3 +4,4 @@ sass-cache/*
 .DS_STORE
 TODO
 .DS_Store
+npm-debug.log

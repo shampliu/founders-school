@@ -1,24 +1,21 @@
 import React from 'react';
-import SpeakerTileFront from './SpeakerTileFront';
-import SpeakerTileBack from './SpeakerTileBack';
 import '../scss/SpeakerTile.scss';
 
 export default class SpeakerTile extends React.Component {
   render() {
     return (
-      <div className="speaker-tile">
-        <div className="flipper">
-          <SpeakerTileFront name={this.props.name} title={this.props.title}
-                            uri={this.props.uri} />
-          <SpeakerTileBack description={this.props.description} />
+      <div className="speaker-tile-wrapper">      
+        <div className="speaker-tile">
+          <div className="speaker-img" style={{background: 'url('+this.props.uri+')'}} /> 
         </div>
+        <p className="speaker-name">{this.props.name}</p>
+        <p className="speaker-title">{this.props.title}</p>
       </div>
     );
   }
 }
 
 /*
-
 ontouchstart allows panes to swap on touch screens
 // onTouchStart={this.classList.toggle('hover')}>
 

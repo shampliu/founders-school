@@ -1,3 +1,4 @@
+@import './_common.scss';
 @import './Main.scss';
 
 .speaker-grid-title {
@@ -13,7 +14,7 @@
   @include horizCenter;
   width: 90%;
   height: auto;
- 
+
   &::after {
    content: " ";
    display: block;

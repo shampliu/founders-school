@@ -97,8 +97,7 @@ function createGrid() {
 
     grid.push(
       <SpeakerTile key={key} name={key} title={speakerData['title']}
-                   uri={speakerData['uri']} index={numSpeakers}
-                   description={speakerData['description']}/>
+                   uri={speakerData['uri']} />
     );
     numSpeakers++;
   }
