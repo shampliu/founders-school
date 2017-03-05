@@ -8,7 +8,7 @@ Created with [React.js](https://facebook.github.io/react/).
 * Responsiveness
 * animations on scroll (only for About section)
 * change typography
-* add section links with smoothscroll
+* add section links with [smoothscroll](https://github.com/fisshy/react-scroll)
 * animate header, make logo pulse after
 * decide what to put on left side of About (explore/compass/globe motif || event info)
 * Float navbar for mobile (hamburger menu)

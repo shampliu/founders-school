@@ -9,6 +9,7 @@ import '../scss/Main.scss';
 
 
 export default class Main extends Component {
+
   render() {
     return (
       <div className=''>

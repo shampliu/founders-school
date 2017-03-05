@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 require('../scss/Header.scss');
 
 class Navbar extends React.Component {
@@ -7,9 +8,9 @@ class Navbar extends React.Component {
       <div className="nav">
         <div className="nav-inner">
           <ul className="nav-links inline">
-            <a href="">
+            <Link to="#about">
               <li>About</li>
-            </a>
+            </Link>
             <a href="">
               <li>Speakers</li>
             </a>
