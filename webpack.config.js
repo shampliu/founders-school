@@ -23,6 +23,6 @@ module.exports = {
   },
   plugins: [
     HTMLWebpackPluginConfig,
-    new ExtractTextPlugin({ filename: 'style.css', disable: false, allChunks: true })
+    new ExtractTextPlugin({ filename: 'index_bundle.css', disable: false, allChunks: true })
   ]
 };

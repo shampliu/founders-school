@@ -61,6 +61,13 @@ footer.footer {
         li {
           color: $text;
           margin-left: 1em;
+
+          span.apply {
+            font-weight: 500;
+            background: yellow;
+            color: $blue;
+            padding: 2px 4px;
+          }
         }
       }
     }

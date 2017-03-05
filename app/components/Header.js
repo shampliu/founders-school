@@ -14,13 +14,13 @@ class Navbar extends React.Component {
               <li>Speakers</li>
             </a>
             <a href="">
-              <li>Sponsors</li>
+              <li>Schedule</li>
             </a>
             <a href="">
               <li>FAQ</li>
             </a>
             <a href="">
-              <li>Schedule</li>
+              <li>Sponsors</li>
             </a>
           </ul>
 

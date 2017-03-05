@@ -30,6 +30,7 @@ export default class Footer extends React.Component {
               <a href=""><li>Sponsors</li></a>
               <a href=""><li>FAQ</li></a>
               <a href=""><li>Schedule</li></a>
+              <a href=""><li><span className="apply">Apply</span></li></a>
             </ul>
 
           </div>

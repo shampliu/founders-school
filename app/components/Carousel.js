@@ -42,12 +42,12 @@ export default class Carousel extends React.Component {
 
   componentDidMount() {
     this.startInterval();
-    document.querySelector('.carousel-wrapper').addEventListener('mouseover', function() {
-      clearInterval(this.state.interval);
-    }.bind(this));
-    document.querySelector('.carousel-wrapper').addEventListener('mouseout', function() {
-      this.startInterval();
-    }.bind(this));
+    // document.querySelector('.carousel-wrapper').addEventListener('mouseover', function() {
+    //   clearInterval(this.state.interval);
+    // }.bind(this));
+    // document.querySelector('.carousel-wrapper').addEventListener('mouseout', function() {
+    //   this.startInterval();
+    // }.bind(this));
   }
 
   render() {
