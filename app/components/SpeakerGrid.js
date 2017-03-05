@@ -16,74 +16,74 @@ const speakers = {
     'name': 'Ajay Kamat',
     'title': 'Partner, Pejman Mar Ventures',
     'description': '',
-    'uri': '/app/assets/headshots/ak.jpg'
+    'uri': '/assets/headshots/ak.jpg'
   },
   'fb': {
     'name': 'Forrest Browning',
     'title': 'Co-founder, StacksWare',
     'description': '',
-    'uri': '/app/assets/headshots/fb.jpg'
+    'uri': '/assets/headshots/fb.jpg'
   },
   'jb': {
     'name': 'Justin Brezhnev',
     'title': 'Executive Director, Hacker Fund',
     'description': '',
-    'uri': '/app/assets/headshots/jb.jpg'
+    'uri': '/assets/headshots/jb.jpg'
   },
   'kh': {
     'name': 'Kevin Hale',
     'title': 'Partner, Y Combinator',
     'description': '',
-    'uri': '/app/assets/headshots/kh.jpg'
+    'uri': '/assets/headshots/kh.jpg'
   },
   'ma': {
     'name': 'Mahbod Moghadam',
     'title': 'Founder, Rap Genius',
     'description': '',
-    'uri': '/app/assets/headshots/ma.jpg'
+    'uri': '/assets/headshots/ma.jpg'
   },
   'mh': {
     'name': 'Michael Hartl',
     'title': 'Author of Ruby on Rails Tutorial',
     'description': '',
-    'uri': '/app/assets/headshots/mh.jpg'
+    'uri': '/assets/headshots/mh.jpg'
   },
   'pb': {
     'name': 'Peter Brack',
     'title': 'Partner, Mucker Capital',
     'description': '',
-    'uri': '/app/assets/headshots/pb.jpg'
+    'uri': '/assets/headshots/pb.jpg'
   },
   'sf': {
     'name': 'Shahin Farshchi',
     'title': 'Partner, Lux Capital',
     'description': '',
-    'uri': '/app/assets/headshots/sf.jpg'
+    'uri': '/assets/headshots/sf.jpg'
   },
   'sl': {
     'name': 'Stephanie Lin',
     'title': 'Founder, Sandbox: Startup Stories',
     'description': '',
-    'uri': '/app/assets/headshots/sl.jpg'
+    'uri': '/assets/headshots/sl.jpg'
   },
   'tl': {
     'name': 'Tiffany Li',
     'title': 'Investor, Anthos',
     'description': '',
-    'uri': '/app/assets/headshots/tl.jpg'
+    'uri': '/assets/headshots/tl.jpg'
   },
   'tr': {
     'name': 'Tess Rinearson',
     'title': 'Software Engineer, Chain',
     'description': '',
-    'uri': '/app/assets/headshots/tr.jpg'
+    'uri': '/assets/headshots/tr.jpg'
   },
   'vlad': {
     'name': 'Vladimir Tenev',
     'title': 'CEO, Robinhood',
     'description': 'Founder and CEO of Robinhood, gave the keynote talk at last \
     year\'s founders school',
-    'uri': '/app/assets/headshots/vlad.png'
+    'uri': '/assets/headshots/vlad.png'
   },
 };
 
@@ -92,7 +92,7 @@ function createGrid() {
 
   var numSpeakers = 0;
   for (var speaker in speakers) {
-    var speakerData = speakers[speaker]; 
+    var speakerData = speakers[speaker];
     var key = speakerData['name'];
 
     grid.push(

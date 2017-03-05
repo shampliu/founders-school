@@ -33,8 +33,8 @@ class Navbar extends React.Component {
 class Logo extends React.Component {
   render() {
     return (
-      <object className="logo" data="/app/assets/logo.svg" type="image/svg+xml">
-        <img src="/app/assets/logo.svg" />
+      <object className="logo" data="/assets/logo.svg" type="image/svg+xml">
+        <img src="/assets/logo.svg" />
       </object>
     )
   }
