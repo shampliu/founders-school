@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import SpeakerGrid from './SpeakerGrid';
 import Header from './Header';
 import About from './About';
+import SpeakerGrid from './SpeakerGrid';
+import Schedule from './Schedule';
 import Carousel from './Carousel';
 import Footer from './Footer';
 import '../scss/Main.scss';
@@ -14,6 +15,7 @@ export default class Main extends Component {
         <Header />
         <About />
         <SpeakerGrid />
+        <Schedule />
         <Carousel />
         <Footer />
       </div>

@@ -5,17 +5,8 @@ import '../scss/SpeakerTile.scss';
 
 export default class SpeakerTile extends React.Component {
   render() {
-
-    let style = '';
-    if (this.props.index % 2 == 0) {
-      style = {margin: "30px 2% 30px 5%"};
-    }
-    else {
-      style = {margin: "30px 5% 30px 2%"};
-    }
-
     return (
-      <div className="speakerTile" style={style}>
+      <div className="speaker-tile">
         <div className="flipper">
           <SpeakerTileFront name={this.props.name} title={this.props.title}
                             uri={this.props.uri} />

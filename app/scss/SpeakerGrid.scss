@@ -1,15 +1,15 @@
 @import './Main.scss';
 
-.speakerGridTitle {
-  color: white;
-  font-size: 30px;
+.speaker-grid-title {
+  color: $FSBlue;
+  font-size: 35px;
   font-family: $sitefont;
   font-weight: 400;
   text-align: right;
-  margin: 25px 35% 25px 25px;
+  margin: 25px 15% 25px 25px;
 }
 
-.speakerGrid {
+.speaker-grid {
   @include horizCenter;
   width: 90%;
   height: auto;

@@ -11,7 +11,7 @@ $tileWidth: 43%;
 $tileHeight: 225px;
 $tileBorderRadius: 6px;
 
-.speakerTile {
+.speaker-tile {
   position: relative;
   float: left;
   width: $tileWidth;
@@ -21,13 +21,26 @@ $tileBorderRadius: 6px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   perspective: $tileWidth;
-/*
-    0 15px 35px rgba(50,50,93,.1),
-    0 5px 15px rgba(200,200,200,.1);
-    box-shadow:
-      0 15px 35px rgba(50,50,93,.2),
-      0 5px 15px rgba(0,0,0,.09) !important;
-*/
+
+  &:nth-of-type(even) {
+    margin: 30px 5% 30px 2%;
+  }
+
+  &:nth-of-type(odd) {
+    margin: 30px 2% 30px 5%;
+  }
+
+  @media #{$mobile} {
+    width: 100%;
+
+    &:nth-of-type(even) {
+      margin: 15px 0px;
+    }
+
+    &:nth-of-type(odd) {
+      margin: 15px 0px;
+    }
+  }
 
   &:active .flipper {
     transform: rotateY(180deg);
@@ -72,17 +85,17 @@ $tileBorderRadius: 6px;
     cursor: pointer;
   }
 
-  &:hover .speakerImg:before,
-  &:focus .speakerImg:before {
+  &:hover .speaker-img:before,
+  &:focus .speaker-img:before {
     display: block;
     transition: all .6s;
   }
 
-  &:hover .speakerImg {
+  &:hover .speaker-img {
     transform: scale(1);
   }
 
-  .speakerImg {
+  .speaker-img {
     width: 100%;
     height: 100%;
     background-color: none;
@@ -109,14 +122,14 @@ $tileBorderRadius: 6px;
     padding: 7px;
   }
 
-  .speakerName {
+  .speaker-name {
     position: absolute;
     bottom: 42px;
     font-size: 18px;
     background: rgba(255,70,70,1);
   }
 
-  .speakerTitle {
+  .speaker-title {
     position: absolute;
     bottom: 10px;
     font-size: 13px;

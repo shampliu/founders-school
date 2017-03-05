@@ -1,12 +1,18 @@
 /* Sass magic to center (https://www.sitepoint.com/centering-with-sass/) */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400);
 
-/* background: #002D47 */;
+/*
+background: #002D47
+#11256C
+ */
 $bgcolor: #EFEFEF;
+$FSBlue: #0D7FA6;
+$FSRed: #C44C60;
+$FSYellow: #FFFF00;
 $sitefont: 'Open Sans', sans-serif;
-
 $phone: "only screen and (max-width : 320px)";
 $tablet: "only screen and (min-width: 768px) and (max-width: 1023px)";
+$mobile: "only screen and (max-width: 768px)";
 $desktop: "only screen and (min-width: 1024px)";
 
 @import 'reset';

@@ -44,6 +44,11 @@ footer.footer {
       .social {
         padding: 0 1.25em;
 
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
         i {
           margin-right: 0.5em;
         }

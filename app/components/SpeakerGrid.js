@@ -16,74 +16,74 @@ const speakers = {
     'name': 'Ajay Kamat',
     'title': 'Partner, Pejman Mar Ventures',
     'description': '',
-    'uri': '../../assets/headshots/ak.jpg'
+    'uri': '/app/assets/headshots/ak.jpg'
   },
   'fb': {
     'name': 'Forrest Browning',
     'title': 'Co-founder, StacksWare',
     'description': '',
-    'uri': '../../assets/headshots/fb.jpg'
+    'uri': '/app/assets/headshots/fb.jpg'
   },
   'jb': {
     'name': 'Justin Brezhnev',
     'title': 'Executive Director, Hacker Fund',
     'description': '',
-    'uri': '../../assets/headshots/jb.jpg'
+    'uri': '/app/assets/headshots/jb.jpg'
   },
   'kh': {
     'name': 'Kevin Hale',
     'title': 'Partner, Y Combinator',
     'description': '',
-    'uri': '../../assets/headshots/kh.jpg'
+    'uri': '/app/assets/headshots/kh.jpg'
   },
   'ma': {
     'name': 'Mahbod Moghadam',
     'title': 'Founder, Rap Genius',
     'description': '',
-    'uri': '../../assets/headshots/ma.jpg'
+    'uri': '/app/assets/headshots/ma.jpg'
   },
   'mh': {
     'name': 'Michael Hartl',
     'title': 'Author of Ruby on Rails Tutorial',
     'description': '',
-    'uri': '../../assets/headshots/mh.jpg'
+    'uri': '/app/assets/headshots/mh.jpg'
   },
   'pb': {
     'name': 'Peter Brack',
     'title': 'Partner, Mucker Capital',
     'description': '',
-    'uri': '../../assets/headshots/pb.jpg'
+    'uri': '/app/assets/headshots/pb.jpg'
   },
   'sf': {
     'name': 'Shahin Farshchi',
     'title': 'Partner, Lux Capital',
     'description': '',
-    'uri': '../../assets/headshots/sf.jpg'
+    'uri': '/app/assets/headshots/sf.jpg'
   },
   'sl': {
     'name': 'Stephanie Lin',
     'title': 'Founder, Sandbox: Startup Stories',
     'description': '',
-    'uri': '../../assets/headshots/sl.jpg'
+    'uri': '/app/assets/headshots/sl.jpg'
   },
   'tl': {
     'name': 'Tiffany Li',
     'title': 'Investor, Anthos',
     'description': '',
-    'uri': '../../assets/headshots/tl.jpg'
+    'uri': '/app/assets/headshots/tl.jpg'
   },
   'tr': {
     'name': 'Tess Rinearson',
     'title': 'Software Engineer, Chain',
     'description': '',
-    'uri': '../../assets/headshots/tr.jpg'
+    'uri': '/app/assets/headshots/tr.jpg'
   },
   'vlad': {
     'name': 'Vladimir Tenev',
     'title': 'CEO, Robinhood',
     'description': 'Founder and CEO of Robinhood, gave the keynote talk at last \
     year\'s founders school',
-    'uri': '../../assets/headshots/vlad.png'
+    'uri': '/app/assets/headshots/vlad.png'
   },
 };
 
@@ -110,8 +110,8 @@ export default class SpeakerGrid extends React.Component {
   render() {
     return (
       <div className="speakers">
-        <div className="speakerGridTitle">Speakers</div>
-        <div className="speakerGrid">
+        <div className="speaker-grid-title"><b>Speakers</b></div>
+        <div className="speaker-grid">
           {createGrid()}
         </div>
       </div>

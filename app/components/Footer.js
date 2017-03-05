@@ -18,9 +18,9 @@ export default class Footer extends React.Component {
             <div className="social">
               Connect with us
               <br/>
-              <i className="fa fa-facebook"></i>
-              <i className="fa fa-twitter"></i>
-              <i className="fa fa-envelope"></i>
+              <a href="https://www.facebook.com/UCLAFoundersSchool/"><i className="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/uclafs"><i className="fa fa-twitter"></i></a>
+              <a href="mailto:uclafoundersschool@gmail.com?Subject=Thanks%20for%20your%20interest%20in%20Founders%20School%202016!"><i className="fa fa-envelope"></i></a>
             </div>
           </div>
           <div className="right">
