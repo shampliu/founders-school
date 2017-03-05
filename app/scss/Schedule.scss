@@ -1,0 +1,133 @@
+@import './_common.scss';
+@import './Main.scss';
+
+.schedule-container {
+  position: relative;
+  width: 100%;
+  background-color: $bgcolor;
+  padding: 50px 0px 70px 0px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+  &:before, &:after {
+    background: inherit; 
+    content: '';
+    display: block;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+  }
+
+  &:before {
+    top: 0;
+    -webkit-transform: skewY(5deg);
+    transform: skewY(5deg);
+    -webkit-transform-origin: 130% 0;
+    transform-origin: 130% 0;
+  }
+
+/*
+  &:after {
+    bottom: 0;
+    -webkit-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-transform-origin: 300% 0%;
+    transform-origin: 300% 0%;
+  }
+  */
+}
+
+.schedule-title {
+  text-align: left;
+  margin-left: 10%;
+  padding-bottom: 25px;
+  font-size: 35px;
+  color: $blue;
+}
+
+.schedule-title-description {
+  text-align: left;
+  margin-left: 10%;
+  padding-bottom: 60px;
+  font-size: 25px;
+  color: $FSBlue;
+}
+
+.schedule-timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 170px;
+  max-width: 72.5em;
+  font-size: 15px;
+  color: $FSYellow;
+  display: block;
+  overflow: visible;
+}
+
+.schedule-day {
+  height: 80px; 
+  width: auto;
+}
+
+.timeline-row {
+  box-sizing: border-box;
+  width: 100%;  
+  height: 56px;
+  margin-bottom: 15px;
+}
+
+.timeline-block {
+  position: relative;
+  width: 9.916%;
+  height: 100%;
+  float: left;
+  margin-right: 1px;
+  padding: 5px;
+  color: white;
+  background-color: $FSYellow;
+  z-index: 10;
+
+  &:nth-of-type(even) {
+    background-color: $FSBlue;
+  }
+
+  &:nth-of-type(odd) {
+    background-color: $FSRed;
+  }
+}
+
+.timeline-markers {
+  color: $FSBlue;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 100; 
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.hour-marker {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 10%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 11px;
+  border-left: 1px solid black;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+
+  span {
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+  }
+}
