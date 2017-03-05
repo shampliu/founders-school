@@ -31,10 +31,21 @@ class Navbar extends React.Component {
 }
 
 class Logo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isAnimated: false
+    };
+  }
+
+  componentDidMount() {
+
+  }
+
   render() {
     return (
-      <object className="logo" data="/assets/logo.svg" type="image/svg+xml">
-        <img src="/assets/logo.svg" />
+      <object className="logo" data="./assets/logo.svg" type="image/svg+xml">
+        <img src="./assets/logo.svg" />
       </object>
     )
   }
