@@ -1,14 +1,25 @@
 @import "common";
 
 .about-wrapper {
-  height: 50vh;
-  h2 {
-    font-size: 1.9em;
-    color: $blue;
-    margin-bottom: 20px;
-  }
+  height: 40vh;
+  div.about-container {
+    display: flex;
+    div.left {
 
-  p {
-    line-height: 20px;
+    }
+    div.right {
+      width: 40%;
+      margin-left: auto;
+
+      h2 {
+        font-size: 1.9em;
+        color: $blue;
+        margin-bottom: 20px;
+      }
+
+      p {
+        line-height: 20px;
+      }
+    }
   }
 }

@@ -5,8 +5,9 @@
   height: 100%;
 
   .header-wrapper {
+    opacity: 0;
     background: red;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     // background: url('/assets/vladspeaking.jpg');
     background-size: cover;
@@ -35,6 +36,19 @@
       justify-content: space-around;
       .logo {
         z-index: 10;
+        height: 100%;
+        width: 261px;
+
+        svg {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+
+          g#logo > g {
+            opacity: 0;
+
+          }
+        }
 
       }
 
@@ -47,6 +61,10 @@
           transform: translateY(-50%);
           padding-left: 60px;
           color: white;
+
+          .anime-group {
+            opacity: 0;
+          }
 
           h1 {
             font-size: 2em;
@@ -94,6 +112,7 @@
     }
 
     .nav {
+      opacity: 0;
       width: 100%;
       height: 75px;
       display: block;
