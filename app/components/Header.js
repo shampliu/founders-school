@@ -93,7 +93,7 @@ class Logo extends React.Component {
         translateX: [-window.innerWidth, 0],
         opacity: [0, 1],
         easing: 'easeInOutQuad',
-        duration: 800
+        duration: 600
       })
       .add({
         targets: 'div.nav',

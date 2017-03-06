@@ -1,9 +1,9 @@
-// var HtmlWebpackPlugin = require('html-webpack-plugin')
-// var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-//   template: __dirname + '/app/index.html',
-//   filename: 'index.html',
-//   inject: 'body'
-// });
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+  template: __dirname + '/app/index.html',
+  filename: 'index.html',
+  inject: 'body'
+});
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
     ]
   },
   plugins: [
-    // HTMLWebpackPluginConfig,
+    HTMLWebpackPluginConfig,
     new ExtractTextPlugin({ filename: 'index_bundle.css', disable: false, allChunks: true })
   ]
 };
