@@ -2,7 +2,7 @@
 @import './Main.scss';
 
 .speaker-grid-title {
-  color: $FSBlue;
+  color: $blue;
   font-size: 35px;
   font-family: $sitefont;
   font-weight: 400;
@@ -12,8 +12,11 @@
 
 .speaker-grid {
   @include horizCenter;
-  width: 90%;
+  width: 80%;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &::after {
    content: " ";

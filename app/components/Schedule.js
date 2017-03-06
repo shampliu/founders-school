@@ -6,9 +6,9 @@ export default class Schedule extends React.Component {
   render() {
     return (
       <div className="schedule-container">
-        <div className="schedule-title"><b>Plan your FS</b></div>
+        <div className="schedule-title"><b>SCHEDULE</b></div>
         <div className="schedule-title-description">
-          Explore the sessions and map out your Founders' School experience.
+          Explore the sessions and map out your FS experience.
         </div>
         <div className="schedule-timeline">
           <ScheduleDay /> {/* Allows for adding multiple days*/}
