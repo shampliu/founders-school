@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import Scrollchor from 'react-scrollchor';
 import anime from 'animejs';
 require('../scss/Header.scss');
 
@@ -9,14 +9,12 @@ class Navbar extends React.Component {
       <div className="nav">
         <div className="nav-inner">
           <ul className="nav-links inline">
-            <Link to="#about">
-              <li>About</li>
-            </Link>
+              <li><Scrollchor to="#about">About</Scrollchor></li>
             <a href="">
-              <li>Speakers</li>
+              <li><Scrollchor to="#speakers">Speakers</Scrollchor></li>
             </a>
             <a href="">
-              <li>Schedule</li>
+              <li><Scrollchor to="#schedule">Schedule</Scrollchor></li>
             </a>
             <a href="">
               <li>FAQ</li>

@@ -108,7 +108,7 @@ function createGrid() {
 export default class SpeakerGrid extends React.Component {
   render() {
     return (
-      <div className="speakers">
+      <div id="speakers" className="speakers">
         <div className="speaker-grid-title"><b>SPEAKERS</b></div>
         <div className="speaker-grid">
           {createGrid()}

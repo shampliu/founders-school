@@ -5,7 +5,7 @@ import '../scss/Schedule.scss';
 export default class Schedule extends React.Component {
   render() {
     return (
-      <div className="schedule-container">
+      <div id="schedule" className="schedule-container">
         <div className="schedule-title"><b>SCHEDULE</b></div>
         <div className="schedule-title-description">
           Explore the sessions and map out your FS experience.
