@@ -1,21 +1,41 @@
 import React from 'react';
+import { Watch } from 'scrollmonitor-react';
 require('../scss/About.scss');
 
-export default class About extends React.Component {
+export default Watch(class About extends React.Component {
   render() {
-    return (
 
+    var left_anim;
+    var right_anim;
+    if (this.props.isInViewport) {
+      left_anim = " appear";
+      right_anim = " come-in";
+    }
+    else {
+      left_anim = "";
+      right_anim = "";
+    }
+
+    return (
       <section id="about" className="about-wrapper">
         <div className="container about-container">
-          <div className="left">
-            asdf
+          <div className={"left" + left_anim}>
+            Where:<br />
+            Carnesale Commons<br />
+            UCLA, Los Angeles, CA<br /><br />
+
+            When:<br />
+            Sunday<br />
+            May 7th, 2017<br />
           </div>
-          <div className="right">
-            <h2>UCLA Founder's School</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. </p>
+          <div className={"right" + right_anim}>
+              <h2>UCLA Founder's School</h2>
+              <p>Founder's School is the largest university entrepreneurship conference in Southern California hosted by UCLA ACM and UPE. We are bringing together over 160 students, engineers, founders, investors, professionals, and professors to share their own stories and build meaningful connections.</p>
+              <br />
+              <p>Our theme for this year is EXPLORATION. We believe in starting when you are inspired and not when you are ready. This is the start of a long-term learning experience that we hope everyone will carry on even beyond the event.</p>
           </div>
         </div>
       </section>
     )
   }
-};
+});
