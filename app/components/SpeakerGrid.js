@@ -5,85 +5,97 @@ import '../scss/SpeakerGrid.scss';
 
 /*
   'initials': {
-    'name': '[name]',
+    'name': 'name',
     'title': 'position',
-    'description': 'summary',
-    'uri': '[path_to_uri]'
+    'logo': 'path_to_logo',
+    'uri': 'path_to_uri',
+    'site': 'link_to_company_website'
   }
 */
 const speakers = {
   'ak': {
     'name': 'Ajay Kamat',
     'title': 'Partner, Pejman Mar Ventures',
-    'description': '',
-    'uri': './assets/headshots/ak.jpg'
+    'logo': './assets/logos/pear.png',
+    'uri': './assets/headshots/ak.jpg',
+    'site': 'https://www.pear.vc/',
   },
   'fb': {
     'name': 'Forrest Browning',
     'title': 'Co-founder, StacksWare',
-    'description': '',
-    'uri': './assets/headshots/fb.jpg'
+    'logo': './assets/logos/stacksware.png',
+    'uri': './assets/headshots/fb.jpg',
+    'site': 'https://stacksware.com/',
   },
   'jb': {
     'name': 'Justin Brezhnev',
     'title': 'Executive Director, Hacker Fund',
-    'description': '',
-    'uri': './assets/headshots/jb.jpg'
+    'logo': './assets/logos/hackerfund.png',
+    'uri': './assets/headshots/jb.jpg',
+    'site': 'https://hacker.fund/',
   },
   'kh': {
     'name': 'Kevin Hale',
     'title': 'Partner, Y Combinator',
-    'description': '',
-    'uri': './assets/headshots/kh.jpg'
+    'logo': './assets/logos/ycombinator.png',
+    'uri': './assets/headshots/kh.jpg',
+    'site': 'https://www.ycombinator.com/',
   },
   'ma': {
     'name': 'Mahbod Moghadam',
     'title': 'Founder, Rap Genius',
-    'description': '',
-    'uri': './assets/headshots/ma.jpg'
+    'logo': './assets/logos/rapgenius.png',
+    'uri': './assets/headshots/ma.jpg',
+    'site': 'https://rap.genius.com/',
   },
   'mh': {
     'name': 'Michael Hartl',
     'title': 'Author of Ruby on Rails Tutorial',
-    'description': '',
-    'uri': './assets/headshots/mh.jpg'
+    'logo': './assets/logos/ruby.png',
+    'uri': './assets/headshots/mh.jpg',
+    'site': 'https://www.railstutorial.org/',
   },
   'pb': {
     'name': 'Peter Brack',
     'title': 'Partner, Mucker Capital',
-    'description': '',
-    'uri': './assets/headshots/pb.jpg'
+    'logo': './assets/logos/mucker.png',
+    'uri': './assets/headshots/pb.jpg',
+    'site': 'http://www.muckercapital.com/',
   },
   'sf': {
     'name': 'Shahin Farshchi',
     'title': 'Partner, Lux Capital',
-    'description': '',
-    'uri': './assets/headshots/sf.jpg'
+    'logo': './assets/logos/lux.png',
+    'uri': './assets/headshots/sf.jpg',
+    'site': 'http://www.luxcapital.com/',
   },
   'sl': {
     'name': 'Stephanie Lin',
     'title': 'Founder, Sandbox: Startup Stories',
-    'description': '',
-    'uri': './assets/headshots/sl.jpg'
+    'logo': './assets/logos/eztable.png',
+    'uri': './assets/headshots/sl.jpg',
+    'site': 'https://en.eztable.com/',
   },
   'tl': {
     'name': 'Tiffany Li',
     'title': 'Investor, Anthos',
-    'description': '',
-    'uri': './assets/headshots/tl.jpg'
+    'logo': './assets/logos/anthos.png',
+    'uri': './assets/headshots/tl.jpg',
+    'site': 'https://anthoscapital.com/',
   },
   'tr': {
     'name': 'Tess Rinearson',
     'title': 'Software Engineer, Chain',
-    'description': '',
-    'uri': './assets/headshots/tr.jpg'
+    'logo': './assets/logos/chain.png',
+    'uri': './assets/headshots/tr.jpg',
+    'site': 'https://chain.com/',
   },
   'vlad': {
     'name': 'Vladimir Tenev',
     'title': 'CEO, Robinhood',
-    'description': 'Founder and CEO of Robinhood, gave the keynote talk at last \
-    year\'s founders school',
-    'uri': './assets/headshots/vlad.png'
+    'logo': './assets/logos/robinhood.jpg',
+    'uri': './assets/headshots/vlad.png',
+    'site': 'https://robinhood.com/',
   },
 };
 
@@ -97,7 +109,8 @@ function createGrid() {
 
     grid.push(
       <SpeakerTile key={key} name={key} title={speakerData['title']}
-                   uri={speakerData['uri']} />
+                   logo={speakerData['logo']} uri={speakerData['uri']}
+                   site={speakerData['site']} />
     );
     numSpeakers++;
   }

@@ -5,9 +5,12 @@ export default class SpeakerTile extends React.Component {
   render() {
     return (
       <div className="speaker-tile-wrapper">      
-        <div className="speaker-tile">
-          <div className="speaker-img" style={{background: 'url('+this.props.uri+')'}} /> 
-        </div>
+        <a href={this.props.site}>
+          <div className="speaker-tile">
+            <div className="speaker-img hover" style={{background: 'url('+this.props.logo+')'}} />
+            <div className="speaker-img" style={{background: 'url('+this.props.uri+')'}} />
+          </div>
+        </a>
         <p className="speaker-name">{this.props.name}</p>
         <p className="speaker-title">{this.props.title}</p>
       </div>
