@@ -12294,6 +12294,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 
 
+// import Sponsors from './Sponsors';
 
 
 class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
@@ -12338,11 +12339,11 @@ class Schedule extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         { id: 'schedule', className: 'schedule-container' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'schedule-title' },
+          { className: 'header-title' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'b',
             null,
-            'SCHEDULE'
+            'Schedule'
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12662,7 +12663,7 @@ class SpeakerGrid extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
       { id: 'speakers', className: 'speakers' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'speaker-grid-title' },
+        { className: 'header-title' },
         'Speakers'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

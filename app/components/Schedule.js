@@ -7,7 +7,7 @@ export default class Schedule extends React.Component {
     return (
       <div className="container">
         <div id="schedule" className="schedule-container">
-          <div className="schedule-title"><b>SCHEDULE</b></div>
+          <div className="header-title"><b>Schedule</b></div>
           <div className="schedule-title-description">
             Explore the sessions and map out your FS experience.
           </div>

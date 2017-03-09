@@ -1,6 +1,29 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400|Montserrat:300,400,700);
+
 
 $blue: rgb(55, 70, 103);
+$bgcolor: #EFEFEF;
+$FSBlue: #0D7FA6;
+$FSRed: #C44C60;
+$FSYellow: #FFFF00;
+$sitefont: 'Open Sans', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+$phone: "only screen and (max-width : 450px)";
+$tablet: "only screen and (min-width: 768px) and (max-width: 1023px)";
+$mobile: "only screen and (max-width: 768px)";
+$desktop: "only screen and (min-width: 1024px)";
+
+@import 'reset';
+@import 'mixins';
+
+*, html, body {
+  box-sizing: border-box;
+}
+
+body {
+  background: $bgcolor;
+  font-family: $sitefont;
+}
 
 div.container {
   max-width: 75em;
@@ -15,4 +38,17 @@ ul.inline {
     text-decoration: none;
     display: inline-block;
   }
+}
+
+div.header-title {
+  font-family: $header-font;
+  color: $blue;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  height:40px;
+  transform: translateY(-20px);
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
