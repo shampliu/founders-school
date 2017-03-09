@@ -9,21 +9,11 @@ class Navbar extends React.Component {
       <div className="nav">
         <div className="nav-inner">
           <ul className="nav-links inline">
-            <a href="">
-              <li><Scrollchor to="#about">About</Scrollchor></li>
-            </a>
-            <a href="">
-              <li><Scrollchor to="#speakers">Speakers</Scrollchor></li>
-            </a>
-            <a href="">
-              <li><Scrollchor to="#schedule">Schedule</Scrollchor></li>
-            </a>
-            <a href="">
-              <li>FAQ</li>
-            </a>
-            <a href="">
-              <li>Sponsors</li>
-            </a>
+            <li><Scrollchor to="#about">About</Scrollchor></li>
+            <li><Scrollchor to="#speakers">Speakers</Scrollchor></li>
+            <li><Scrollchor to="#schedule">Schedule</Scrollchor></li>
+            <li><Scrollchor to="#faq">Faq</Scrollchor></li>
+            <li><Scrollchor to="#sponsors">Sponsors</Scrollchor></li>
           </ul>
 
         </div>

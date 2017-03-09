@@ -34,9 +34,13 @@ ul.inline {
   list-style-type: none;
   display: inline-block;
 
-  a {
-    text-decoration: none;
+  li {
     display: inline-block;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+    }  
   }
 }
 

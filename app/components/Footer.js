@@ -1,4 +1,5 @@
 import React from 'react';
+import Scrollchor from 'react-scrollchor';
 import '../scss/Footer.scss';
 
 export default class Footer extends React.Component {
@@ -25,12 +26,12 @@ export default class Footer extends React.Component {
           </div>
           <div className="right">
             <ul className="inline">
-              <a href=""><li>About</li></a>
-              <a href=""><li>Speakers</li></a>
-              <a href=""><li>Sponsors</li></a>
-              <a href=""><li>FAQ</li></a>
-              <a href=""><li>Schedule</li></a>
-              <a href=""><li><span className="apply">Apply</span></li></a>
+              <li><Scrollchor to="#about">About</Scrollchor></li>
+              <li><Scrollchor to="#speakers">Speakers</Scrollchor></li>
+              <li><Scrollchor to="#schedule">Schedule</Scrollchor></li>
+              <li><Scrollchor to="#sponsors">Sponsors</Scrollchor></li>
+              <li><Scrollchor to="#faq">Faq</Scrollchor></li>
+              <li><span className="apply">Apply</span></li>
             </ul>
 
           </div>

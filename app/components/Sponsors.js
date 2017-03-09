@@ -7,12 +7,12 @@ export default class Sponsors extends Component {
 
   render() {
     return (
-      <div className='container'>
-        <div className="sponsors">
+      <div id="sponsors" className='sponsors'>
+        <div className="containers">
           <div className="header-title">Sponsors</div>
           <div className="sponsors-grid section">
-          </div>
         </div>
+      </div>
 
 
 
