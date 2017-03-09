@@ -1,8 +1,8 @@
 @import "common";
 
 .come-in {
-  transform: translateX(1200px);
-  animation: come-in 1s ease-in-out forwards;
+  transform: translateX(100px);
+  animation: come-in 1.5s ease-in-out forwards;
 }
 @keyframes come-in {
   to {
