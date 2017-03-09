@@ -7,7 +7,7 @@ export default class SpeakerTile extends React.Component {
       <div className="speaker-tile-wrapper">      
         <a href={this.props.site}>
           <div className="speaker-tile">
-            <div className="speaker-img hover" style={{background: 'url('+this.props.logo+')'}} />
+            <div className="speaker-img hover" style={{width: '80%', background: 'url('+this.props.logo+')'}} />
             <div className="speaker-img" style={{background: 'url('+this.props.uri+')'}} />
           </div>
         </a>
