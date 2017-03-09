@@ -3,19 +3,6 @@
 
 .speakers {
   background: white;
-  .speaker-grid-title {
-    color: $blue;
-    font-size: 35px;
-    font-family: $sitefont;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 auto;
-    height:40px;
-    transform: translateY(-20px);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-  }
 
   .speaker-grid {
     @include horizCenter;
