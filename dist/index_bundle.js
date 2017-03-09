@@ -11705,6 +11705,11 @@ __webpack_require__(119);
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: "left" + left_anim },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'compass' },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { className: 'fa fa-compass' })
+          ),
           'Where:',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null),
           'Carnesale Commons',
@@ -11999,12 +12004,16 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           'ul',
           { className: 'nav-links inline' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'li',
-            null,
+            'a',
+            { href: '' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_react_scrollchor___default.a,
-              { to: '#about' },
-              'About'
+              'li',
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_react_scrollchor___default.a,
+                { to: '#about' },
+                'About'
+              )
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -12323,117 +12332,121 @@ class Schedule extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
   render() {
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      { id: 'schedule', className: 'schedule-container' },
+      { className: 'container' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: 'schedule-title' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'b',
-          null,
-          'SCHEDULE'
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'schedule-title-description' },
-        'Explore the sessions and map out your FS experience.'
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        'div',
-        { className: 'schedule-timeline' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ScheduleDay__["a" /* default */], null),
-        ' ',
+        { id: 'schedule', className: 'schedule-container' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
-          { className: 'timeline-markers' },
+          { className: 'schedule-title' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'b',
+            null,
+            'SCHEDULE'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'schedule-title-description' },
+          'Explore the sessions and map out your FS experience.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'schedule-timeline' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__ScheduleDay__["a" /* default */], null),
+          ' ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
-            { className: 'hour-marker' },
+            { className: 'timeline-markers' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '9 AM'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '9 AM'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '10'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '10'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '11'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '11'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '12 PM'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '12 PM'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '1'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '1'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '2'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '2'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '3'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '3'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '4'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '4'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '5'
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'hour-marker' },
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '5'
+              )
+            ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'span',
-              null,
-              '6'
+              'div',
+              { className: 'hour-marker' },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'span',
+                null,
+                '6'
+              )
             )
           )
         )
@@ -12650,11 +12663,7 @@ class SpeakerGrid extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'speaker-grid-title' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'b',
-          null,
-          'SPEAKERS'
-        )
+        'Speakers'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
@@ -12694,7 +12703,7 @@ class SpeakerTile extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'div',
           { className: 'speaker-tile' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'speaker-img hover', style: { background: 'url(' + this.props.logo + ')' } }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'speaker-img hover', style: { width: '80%', background: 'url(' + this.props.logo + ')' } }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'speaker-img', style: { background: 'url(' + this.props.uri + ')' } })
         )
       ),

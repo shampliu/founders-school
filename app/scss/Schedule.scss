@@ -5,51 +5,24 @@
   position: relative;
   width: 100%;
   background-color: $bgcolor;
-  padding: 50px 0px 70px 0px;
-  margin-top: 10%;
+  padding: 0 40px 50px 40px;
   margin-bottom: 10%;
 
-  &:before, &:after {
-    background: inherit; 
-    content: '';
-    display: block;
-    height: 30%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: 10;
-  }
 
-  &:before {
-    top: 0;
-    -webkit-transform: skewY(5deg);
-    transform: skewY(5deg);
-    -webkit-transform-origin: 130% 0;
-    transform-origin: 130% 0;
-  }
-
-/*
-  &:after {
-    bottom: 0;
-    -webkit-transform: skewY(-3deg);
-    transform: skewY(-3deg);
-    -webkit-transform-origin: 300% 0%;
-    transform-origin: 300% 0%;
-  }
-  */
 }
 
 .schedule-title {
-  text-align: left;
-  margin-left: 10%;
+  letter-spacing: 4px;
+  height: 40px;
+  text-align: center;
   padding-bottom: 25px;
   font-size: 35px;
   color: $blue;
+  transform: translateY(-20px);
 }
 
 .schedule-title-description {
-  text-align: left;
-  margin-left: 10%;
+  text-align: center;
   padding-bottom: 60px;
   font-size: 25px;
   color: $FSBlue;
@@ -68,13 +41,13 @@
 }
 
 .schedule-day {
-  height: 80px; 
+  height: 80px;
   width: auto;
 }
 
 .timeline-row {
   box-sizing: border-box;
-  width: 100%;  
+  width: 100%;
   height: 56px;
   margin-bottom: 15px;
 }
@@ -103,7 +76,7 @@
   color: $FSBlue;
   position: absolute;
   box-sizing: border-box;
-  z-index: 100; 
+  z-index: 100;
   top: 0;
   left: 0;
   height: 100%;

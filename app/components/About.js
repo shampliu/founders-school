@@ -20,6 +20,8 @@ export default Watch(class About extends React.Component {
       <section id="about" className="about-wrapper">
         <div className="container about-container">
           <div className={"left" + left_anim}>
+            <div className="compass"><i className="fa fa-compass"></i></div>
+
             Where:<br />
             Carnesale Commons<br />
             UCLA, Los Angeles, CA<br /><br />
