@@ -1,20 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Watch } from 'scrollmonitor-react';
 require('../scss/About.scss');
 
-export default Watch(class About extends React.Component {
+export default Watch(class About extends Component {
   render() {
 
-    var left_anim;
-    var right_anim;
-    if (this.props.isInViewport) {
-      left_anim = " appear";
-      right_anim = " come-in";
-    }
-    else {
-      left_anim = "";
-      right_anim = "";
-    }
+    let left_anim = this.props.isInViewport ? " appear" : "";
+    let right_anim = this.props.isInViewport ? " come-in" : "";
 
     return (
       <section id="about" className="about-wrapper">
