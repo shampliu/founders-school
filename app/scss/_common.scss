@@ -44,11 +44,15 @@ div.header-title {
   font-family: $header-font;
   color: $blue;
   font-size: 35px;
-  font-weight: 400;
+  font-weight: bold;
   text-align: center;
   margin: 0 auto;
   height:40px;
   transform: translateY(-20px);
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+div.section {
+  padding: 80px 0;
 }

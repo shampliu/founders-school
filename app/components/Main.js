@@ -5,7 +5,8 @@ import SpeakerGrid from './SpeakerGrid';
 import Schedule from './Schedule';
 import Carousel from './Carousel';
 import Footer from './Footer';
-// import Sponsors from './Sponsors';
+import Sponsors from './Sponsors';
+import Faq from './Faq';
 import '../scss/Main.scss';
 
 
@@ -18,7 +19,8 @@ export default class Main extends Component {
         <About />
         <SpeakerGrid />
         <Schedule />
-        {/* <Sponsors /> */}
+        <Faq />
+        <Sponsors />
         <Carousel />
         <Footer />
       </div>

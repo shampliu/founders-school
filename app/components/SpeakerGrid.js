@@ -123,7 +123,7 @@ export default class SpeakerGrid extends React.Component {
     return (
       <div id="speakers" className="speakers">
         <div className="header-title">Speakers</div>
-        <div className="speaker-grid">
+        <div className="speaker-grid section">
           {createGrid()}
         </div>
       </div>
