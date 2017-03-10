@@ -5,3 +5,4 @@ sass-cache/*
 TODO
 .DS_Store
 npm-debug.log
+dist/index.html
