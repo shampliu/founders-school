@@ -1,9 +1,15 @@
+@import "common";
+
 .carousel-wrapper {
   width: 100%;
   position: relative;
   height: 450px;
   overflow: hidden;
   display: block;
+
+  @media #{$iPadAndSmaller} {
+    height: 225px;
+  }
 
   &:before {
     content: '';
