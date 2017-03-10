@@ -5,15 +5,19 @@ require('../scss/Header.scss');
 
 class Navbar extends React.Component {
   render() {
+    let animeStyle = {
+      offset: -35,
+    };
+
     return (
       <div className="nav">
         <div className="nav-inner">
           <ul className="nav-links inline">
-            <li><Scrollchor to="#about">About</Scrollchor></li>
-            <li><Scrollchor to="#speakers">Speakers</Scrollchor></li>
-            <li><Scrollchor to="#schedule">Schedule</Scrollchor></li>
-            <li><Scrollchor to="#faq">Faq</Scrollchor></li>
-            <li><Scrollchor to="#sponsors">Sponsors</Scrollchor></li>
+            <li><Scrollchor to="#about" animate={animeStyle}>About</Scrollchor></li>
+            <li><Scrollchor to="#speakers" animate={animeStyle}>Speakers</Scrollchor></li>
+            <li><Scrollchor to="#schedule" animate={animeStyle}>Schedule</Scrollchor></li>
+            <li><Scrollchor to="#faq" animate={animeStyle}>Faq</Scrollchor></li>
+            <li><Scrollchor to="#sponsors" animate={animeStyle}>Sponsors</Scrollchor></li>
           </ul>
 
         </div>

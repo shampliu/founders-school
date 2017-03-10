@@ -4,6 +4,10 @@ import '../scss/Footer.scss';
 
 export default class Footer extends React.Component {
   render() {
+    let animeStyle = {
+      offset: -35,
+    };
+
     return (
       <footer className="footer">
         <div className="container">
@@ -26,11 +30,11 @@ export default class Footer extends React.Component {
           </div>
           <div className="right">
             <ul className="inline">
-              <li><Scrollchor to="#about">About</Scrollchor></li>
-              <li><Scrollchor to="#speakers">Speakers</Scrollchor></li>
-              <li><Scrollchor to="#schedule">Schedule</Scrollchor></li>
-              <li><Scrollchor to="#sponsors">Sponsors</Scrollchor></li>
-              <li><Scrollchor to="#faq">Faq</Scrollchor></li>
+              <li><Scrollchor to="#about" animate={animeStyle}>About</Scrollchor></li>
+              <li><Scrollchor to="#speakers" animate={animeStyle}>Speakers</Scrollchor></li>
+              <li><Scrollchor to="#schedule" animate={animeStyle}>Schedule</Scrollchor></li>
+              <li><Scrollchor to="#sponsors" animate={animeStyle}>Sponsors</Scrollchor></li>
+              <li><Scrollchor to="#faq" animate={animeStyle}>Faq</Scrollchor></li>
               <li><span className="apply">Apply</span></li>
             </ul>
 
