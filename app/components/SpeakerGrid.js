@@ -130,7 +130,3 @@ export default class SpeakerGrid extends React.Component {
     );
   }
 }
-
-/*
-TODO: make responsive for mobile
-*/
