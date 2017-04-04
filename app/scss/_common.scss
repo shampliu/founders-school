@@ -62,4 +62,8 @@ div.header-title {
 
 div.section {
   padding: 80px 0;
+
+  @media #{$iPadAndSmaller} {
+    padding: 40px 0;
+  }
 }

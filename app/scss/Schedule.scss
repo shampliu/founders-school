@@ -6,9 +6,7 @@
   width: 100%;
   background-color: $bgcolor;
   padding: 0 40px 50px 40px;
-  margin-bottom: 10%;
-
-
+  margin-bottom: 25%;
 }
 
 .schedule-title {
@@ -19,6 +17,10 @@
   font-size: 35px;
   color: $blue;
   transform: translateY(-20px);
+
+  @media #{$iPadAndSmaller} {
+    padding-bottom: none;
+  }
 }
 
 .schedule-title-description {
@@ -26,6 +28,11 @@
   padding-bottom: 60px;
   font-size: 25px;
   color: $FSBlue;
+
+  @media #{$iPadAndSmaller} {
+    text-align: left;
+    font-size: 20px;
+  }
 }
 
 .schedule-timeline {
@@ -38,6 +45,10 @@
   color: $FSYellow;
   display: block;
   overflow: visible;
+
+  @media #{$iPadAndSmaller} {
+    height: 250px;
+  }
 }
 
 .schedule-day {
@@ -45,11 +56,24 @@
   width: auto;
 }
 
+.timeline-table {
+  @media #{$iPadAndSmaller} {
+    margin-left: 20%;
+    height: 375px;
+  }
+}
+
 .timeline-row {
   box-sizing: border-box;
   width: 100%;
   height: 56px;
   margin-bottom: 15px;
+
+  @media #{$iPadAndSmaller} {
+    float: left;
+    width: 49%;
+    height: 100%;
+  }
 }
 
 .timeline-block {
@@ -70,6 +94,11 @@
   &:nth-of-type(odd) {
     background-color: $FSRed;
   }
+
+  @media #{$iPadAndSmaller} {
+    width: 100% !important;
+    height: 10%;
+ }
 }
 
 .timeline-markers {
@@ -98,9 +127,20 @@
   letter-spacing: 1px;
   font-size: 12px;
 
+  @media #{$iPadAndSmaller} {
+    width: 100%;
+    height: 15%;
+    border-left: none;
+    border-top: 1px solid black;
+  }
+
   span {
     position: absolute;
     left: 5px;
     bottom: 0;
+
+    @media #{$iPadAndSmaller} {
+      top: 2px;
+    }
   }
 }
