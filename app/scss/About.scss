@@ -22,15 +22,38 @@
 
 .about-wrapper {
   // height: 40vh;
-  padding-bottom: 120px;
+  // padding-bottom: 120px;
+  margin-bottom: 42px;
 
   div.about-container {
     display: flex;
 
     div.left {
       opacity: 0;
-      margin-top: 5vh;
+      padding: 8px;
+      margin-top: 3vh;
       margin-left: auto;
+      color: white;
+
+      .explore-background {
+        width: 25%;
+        height: 37%;
+        position: absolute;
+      }
+
+      .explore-image {
+        height: 100%;
+        width: 100%;
+        opacity: .10;
+      }
+
+      .explore-gradient {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: .86;
+        background: linear-gradient(to bottom right,#24648a,#152641);
+      }
 
       div.compass {
         width: 100px;
@@ -42,7 +65,22 @@
           font-size: 4em;
         }
       }
+
+      #where {
+        width: 90%;
+        padding: 8px;
+        position: relative;
+        z-index: 10;
+      }
+
+      #when {
+        width: 90%;
+        padding: 8px;
+        position: relative;
+        z-index: 10;
+      }
     }
+
     div.right {
       opacity: 0;
       margin-top: 5vh;
@@ -58,6 +96,17 @@
 
       p {
         line-height: 20px;
+      }
+
+      blockquote {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      #michaelcollins {
+        width: 100%;
+        padding-right: 70px;
+        text-align: right;
       }
     }
   }

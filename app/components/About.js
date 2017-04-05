@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { Watch } from 'scrollmonitor-react';
 require('../scss/About.scss');
 
+let left_background_styles = {
+    background: 'url(assets/compass.jpg)',
+    backgroundSize: '659px 345px',
+    backgroundRepeat: 'no-repeat',
+};
+
 export default Watch(class About extends Component {
   render() {
 
@@ -12,22 +18,36 @@ export default Watch(class About extends Component {
       <section id="about" className="about-wrapper">
         <div className="container about-container">
           <div className={"left" + left_anim}>
-            <div className="compass"><i className="fa fa-compass"></i></div>
-
-            Where:<br />
-            Carnesale Commons<br />
-            UCLA, Los Angeles, CA<br /><br />
-
-            When:<br />
-            Sunday<br />
-            May 7th, 2017<br />
+            {/*div className="compass"><i className="fa fa-compass"></i></div>*/}
+            <div className="explore-background">
+              <div className="explore-gradient"></div>
+              <div className="explore-image" style={left_background_styles}></div>
+            </div> 
+            <div id="where">
+              <div id="where-title">Where:<br /></div>
+              <span>
+                Carnesale Commons<br />
+                UCLA, Los Angeles, CA<br /><br />
+              </span>
+            </div>
+            <div id="when">
+              <div id="when-title">When:<br /></div>
+              <span>
+                Sunday<br />
+                May 7th, 2017<br />
+              </span>
+            </div>
           </div>
           <div className={"right" + right_anim}>
               <h2>UCLA Founder's School</h2>
               <p>Founder's School is the largest university entrepreneurship conference in Southern California hosted by UCLA ACM and UPE. We are bringing together over 160 students, engineers, founders, investors, professionals, and professors to share their own stories and build meaningful connections.</p>
               <br />
-              <p>Our theme for this year is EXPLORATION. We believe in starting when you are inspired and not when you are ready. This is the start of a long-term learning experience that we hope everyone will carry on even beyond the event.</p>
+              <p>Our theme for this year is <b><i>EXPLORATION</i></b>. We believe in the following:</p>
+              <br />
+              <blockquote><i>"It's human nature to stretch, to go, to see, to understand. Exploration is not a choice really; it's an imperative."</i></blockquote>
+              <blockquote id="michaelcollins">- Michael Collins</blockquote>
           </div>
+
         </div>
       </section>
     )

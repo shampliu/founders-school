@@ -3,7 +3,8 @@
   "description": "\"\"",
   "main": "index.js",
   "authors": [
-    "Chang Liu <shampliu@gmail.com>"
+    "Chang Liu <shampliu@gmail.com>",
+    "Alex Fong <alpfong@gmail.com>"
   ],
   "license": "ISC",
   "homepage": "https://github.com/shampliu/founders-school",
