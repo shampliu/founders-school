@@ -21,8 +21,7 @@ export default class Footer extends React.Component {
               <strong>UCLA <a href="">ACM</a> & <a href="">UPE</a></strong>
             </div>
             <div className="social">
-              Connect with us
-              <br/>
+              <span className="connect">Connect with us</span>
               <a href="https://www.facebook.com/UCLAFoundersSchool/"><i className="fa fa-facebook"></i></a>
               <a href="https://twitter.com/uclafs"><i className="fa fa-twitter"></i></a>
               <a href="mailto:uclafoundersschool@gmail.com?Subject=Thanks%20for%20your%20interest%20in%20Founders%20School%202016!"><i className="fa fa-envelope"></i></a>
@@ -35,7 +34,7 @@ export default class Footer extends React.Component {
               <li><Scrollchor to="#schedule" animate={animeStyle}>Schedule</Scrollchor></li>
               <li><Scrollchor to="#sponsors" animate={animeStyle}>Sponsors</Scrollchor></li>
               <li><Scrollchor to="#faq" animate={animeStyle}>Faq</Scrollchor></li>
-              <li><span className="apply">Apply</span></li>
+              <li><span className="apply"><a href="#">Apply</a></span></li>
             </ul>
 
           </div>
