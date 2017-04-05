@@ -7,10 +7,10 @@ let web_styles = {
       width: "29.9%"
     },
     "second_sessions": {
-      width: "40%"
+      width: "39.82%"
     },
     "keynote1": {
-      width: "10%"
+      width: "9.86%"
     },
     "keynote2": {
       width: "9.5%"
@@ -57,7 +57,7 @@ let mobile_styles = {
 export default class ScheduleDay extends React.Component {
   render() {
     let active_style = web_styles;
-    if (window.innerHeight < 1030) {
+    if (window.innerWidth < 790) {
       active_style = mobile_styles;
     }
 
