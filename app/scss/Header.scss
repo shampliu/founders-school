@@ -9,7 +9,6 @@
     background: red;
     width: 100vw;
     height: 100vh;
-    // background: url('/assets/vladspeaking.jpg');
     background-size: cover;
     background-attachment: fixed;
 
@@ -142,4 +141,109 @@
       }
     }
   }
+}
+
+@media #{$iPadAndSmaller} {
+  #app {
+
+    .header-wrapper {
+      .title-wrapper {
+        .logo {
+          svg {
+            width: 210px;
+          }
+
+        }
+
+        .description-wrapper {
+
+          .description {
+            h1 {
+              font-size: 1.6em;
+              margin-bottom: 6px;
+              line-height: 30px;
+            }
+
+            p {
+              font-size: 1em;
+              margin-bottom: 20px;
+            }
+
+            h3 {
+              font-size: 1.2em;
+            }
+
+            button {
+              width: 75px;
+              height: 25px;
+              font-size: 0.6em;
+
+            }
+          }
+
+        }
+      }
+
+      .nav {
+        .nav-inner {
+          ul.nav-links {
+            a {
+              margin: 0 8px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 659px) {
+  #app {
+
+    .header-wrapper {
+      .title-wrapper {
+        height: 80%;
+        width: 90%;
+        flex-wrap: wrap;
+        .logo {
+          height: auto;
+          margin-bottom: -4em;
+          svg {
+            width: 120px;
+            display: block;
+            margin: 0 auto;
+          }
+
+        }
+
+        .description-wrapper {
+          font-size: 0.8em;
+          text-align: center;
+
+          .description {
+            padding-left: 0px;
+
+            h1 {
+              line-height: 24px;
+            }
+          }
+
+        }
+      }
+
+      .nav {
+        .nav-inner {
+          ul.nav-links {
+            a {
+              font-size: 0.8em;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
 }

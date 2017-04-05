@@ -23,6 +23,10 @@ $desktop: "only screen and (min-width: 1026px)";
   box-sizing: border-box;
 }
 
+#app {
+  overflow-x: hidden;
+}
+
 body {
   background: $bgcolor;
   font-family: $sitefont;
