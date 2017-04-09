@@ -10,11 +10,10 @@ export default class Sponsors extends Component {
       <div id="faq" className="faq">
         <div className='container'>
           <div className="header-title">Faq</div>
-          <div className="section"></div>
+          <div className="section">
+            <div id="tba">TBA</div>
+          </div>
         </div>
-
-
-
       </div>
     )
   }
