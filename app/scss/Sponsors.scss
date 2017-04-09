@@ -2,5 +2,59 @@
 
 .sponsors {
 
+}
 
+.sponsors-grid {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  @media #{$allPhones} {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.lower {
+  justify-content: center;
+}
+
+.sponsor-tile {
+  margin-right: 75px;
+  margin-bottom: 75px;
+
+  &:first-of-type {
+    margin-left: 50px;
+  }
+
+  img {
+    max-height: 100px;
+
+    @media #{"only screen and (max-width: 1025px)"} {
+      max-height: 70px;
+    }
+    @media #{$iPadAndSmaller} {
+      max-height: 50px;
+    }
+  }
+}
+
+#reslife {
+  img {
+    display: block;
+    margin: auto;
+    max-height: 40px;
+
+    @media #{"only screen and (max-width: 1025px)"} {
+      max-height: 28px;
+    }
+    @media #{$iPadAndSmaller} {
+      max-height: 20px;
+    }
+  }
 }
