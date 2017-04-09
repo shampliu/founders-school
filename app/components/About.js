@@ -26,15 +26,15 @@ export default Watch(class About extends Component {
             <div id="where">
               <div id="where-title">Where:<br /></div>
               <span>
-                Carnesale Commons<br />
-                UCLA, Los Angeles, CA<br /><br />
+                <p>Carnesale Commons</p><br />
+                <p>UCLA, Los Angeles, CA</p><br /><br />
               </span>
             </div>
             <div id="when">
               <div id="when-title">When:<br /></div>
               <span>
-                Sunday<br />
-                May 7th, 2017<br />
+                <p>Sunday</p><br />
+                <p>May 7th, 2017</p><br />
               </span>
             </div>
           </div>
