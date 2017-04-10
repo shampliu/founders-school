@@ -31,6 +31,11 @@
 
   div.about-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 100px;
 
     div.left {
       opacity: 0;
@@ -40,22 +45,40 @@
       color: white;
 
       .explore-background {
-        width: 25%;
-        height: 37%;
+        width: 250px;
+        height: 250px;
         position: absolute;
+        margin-left: -5px;
+        box-shadow: 1px 1px 15px #ABAABA;
+
+        @media #{$mobile} {
+          width: 200px;
+          height: 200px;
+        }
+
+        @media #{$allPhones} {
+          width: 70%;
+          height: 230px;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
       }
 
       .explore-image {
         height: 100%;
         width: 100%;
         opacity: .10;
+
+        @media #{$allPhones} {
+
+        }
       }
 
       .explore-gradient {
         height: 100%;
         width: 100%;
         position: absolute;
-        opacity: .86;
+        // opacity: .86;
         background: linear-gradient(to bottom right,#24648a,#152641);
       }
 
@@ -71,17 +94,32 @@
       }
 
       #where {
-        width: 90%;
+        margin-top: 20px;
+        width: 100%;
         padding: 8px;
         position: relative;
         z-index: 10;
+
+        @media #{$allPhones} {
+          text-align: center;
+        }
       }
 
       #when {
-        width: 90%;
+        width: 100%;
         padding: 8px;
         position: relative;
         z-index: 10;
+
+        @media #{$allPhones} {
+          text-align: center;
+        }
+      }
+
+      @media #{$allPhones} {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 

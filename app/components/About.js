@@ -24,16 +24,16 @@ export default Watch(class About extends Component {
               <div className="explore-image" style={left_background_styles}></div>
             </div> 
             <div id="where">
-              <div id="where-title">Where:<br /></div>
+              <div id="where-title">Where:<br /><br /></div>
               <span>
-                <p>Carnesale Commons</p><br />
-                <p>UCLA, Los Angeles, CA</p><br /><br />
+                <p>Carnesale Commons</p>
+                <p>UCLA, Los Angeles, CA</p><br />
               </span>
             </div>
             <div id="when">
-              <div id="when-title">When:<br /></div>
+              <div id="when-title">When:<br /><br /></div>
               <span>
-                <p>Sunday</p><br />
+                <p>Sunday</p>
                 <p>May 7th, 2017</p><br />
               </span>
             </div>
