@@ -3,3 +3,57 @@
 .faq {
   background: white;
 }
+
+.faq-column-container {
+  width: 70%;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    color: $FSBlue;
+  }
+
+  ul {
+    height: 500px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between; /*center*/
+
+    @media #{$mobile} {
+      flex-direction: row;
+      height: auto;
+    }
+  }
+
+  li {
+    height: auto;
+    width: 45%;
+    margin-bottom: 50px;
+
+    @media #{$mobile} {
+      width: 80%;
+    }
+
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+}
+
+.faq-column {
+  position: relative;
+  float: left;
+  width: 45%;
+}
