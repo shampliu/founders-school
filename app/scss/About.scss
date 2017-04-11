@@ -22,15 +22,65 @@
 
 .about-wrapper {
   // height: 40vh;
-  padding-bottom: 120px;
+  // padding-bottom: 120px;
+  margin-bottom: 42px;
+
+  p, h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+  }
 
   div.about-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 100px;
 
     div.left {
       opacity: 0;
-      margin-top: 5vh;
+      padding: 8px;
+      margin-top: 3vh;
       margin-left: auto;
+      color: white;
+
+      .explore-background {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        margin-left: -5px;
+        box-shadow: 1px 1px 15px #ABAABA;
+
+        @media #{$mobile} {
+          width: 200px;
+          height: 200px;
+        }
+
+        @media #{$allPhones} {
+          width: 70%;
+          height: 230px;
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+      }
+
+      .explore-image {
+        height: 100%;
+        width: 100%;
+        opacity: .10;
+
+        @media #{$allPhones} {
+
+        }
+      }
+
+      .explore-gradient {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        // opacity: .86;
+        background: linear-gradient(to bottom right,#24648a,#152641);
+      }
 
       div.compass {
         width: 100px;
@@ -42,7 +92,46 @@
           font-size: 4em;
         }
       }
+
+      #where, #when {
+        margin-top: 20px;
+        width: 100%;
+        padding: 8px 18px;
+        position: relative;
+        z-index: 10;
+
+        p {
+          line-height: 20px;
+          letter-spacing: 0.6px;
+        }
+        
+
+        @media #{$allPhones} {
+          text-align: center;
+        }
+      }
+
+      #where-title > span, #when-title > span {
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+        color: $blue;
+        background: yellow;
+        padding: 1px 7px;
+      }
+
+      #when {
+        margin-top: 10px;
+      }
+
+      @media #{$allPhones} {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
+
     div.right {
       opacity: 0;
       margin-top: 5vh;
@@ -54,10 +143,36 @@
         font-size: 1.9em;
         color: $blue;
         margin-bottom: 20px;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
 
       p {
-        line-height: 20px;
+        letter-spacing: 0.6px;
+        line-height: 24px;
+
+        span {
+          font-weight: bold;
+          text-transform: uppercase;
+          background: yellow;
+          padding: 0 2px;
+          color: $blue;
+        }
+      }
+
+      blockquote {
+        padding-left: 30px;
+        padding-right: 30px;
+        letter-spacing: 1px;
+        line-height: 22px;
+        font-weight: 300;
+      }
+
+      #michaelcollins {
+        width: 100%;
+        padding-right: 70px;
+        text-align: right;
       }
     }
   }

@@ -10,7 +10,7 @@ $sitefont: 'Open Sans', sans-serif;
 $header-font: 'Montserrat', sans-serif;
 $smallPhone: "only screen and (max-width: 320px)";
 $phone: "only screen and (min-width: 321px) and (max-width : 450px)";
-$allPhones: "only screen and (max-width: 450px)";
+$allPhones: "only screen and (max-width: 550px)";
 $iPadAndSmaller: "only screen and (max-width: 768px)";
 $tablet: "only screen and (min-width: 768px) and (max-width: 1025px)";
 $mobile: "only screen and (max-width: 1025px)";
@@ -70,4 +70,13 @@ div.section {
   @media #{$iPadAndSmaller} {
     padding: 40px 0;
   }
+}
+
+#tba {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+  font-size: 40px;
+  color: #787878;
+  font-family: $header-font;
 }

@@ -3,99 +3,63 @@ import SpeakerTile from './SpeakerTile';
 import '../scss/SpeakerGrid.scss';
 // Can't mix import and module.exports
 
-/*
-  'initials': {
-    'name': 'name',
-    'title': 'position',
-    'logo': 'path_to_logo',
-    'uri': 'path_to_uri',
-    'site': 'link_to_company_website'
-  }
-*/
+
 const speakers = {
-  'ak': {
-    'name': 'Ajay Kamat',
-    'title': 'Partner, Pejman Mar Ventures',
-    'logo': './assets/logos/pear.png',
-    'uri': './assets/headshots/ak.jpg',
-    'site': 'https://www.pear.vc/',
+  'eugene': {
+    'name': 'Eugene Marinelli',
+    'title': 'Co-founder and CTO, Blend',
+    'logo': './assets/logos/2017/bsolid.png',
+    'uri': './assets/headshots/2017/EugeneMarinelli.jpg',
+    'site': 'https://blend.com',
   },
-  'fb': {
-    'name': 'Forrest Browning',
-    'title': 'Co-founder, StacksWare',
-    'logo': './assets/logos/stacksware.png',
-    'uri': './assets/headshots/fb.jpg',
-    'site': 'https://stacksware.com/',
+  'ann': {
+    'name': 'Ann Wang',
+    'title': 'Co-founder and CEO, Enrou',
+    'logo': './assets/logos/2017/enrou.jpg',
+    'uri': './assets/headshots/2017/AnnWang.jpg',
+    'site': 'https://enrou.co/',
   },
-  'jb': {
-    'name': 'Justin Brezhnev',
-    'title': 'Executive Director, Hacker Fund',
-    'logo': './assets/logos/hackerfund.png',
-    'uri': './assets/headshots/jb.jpg',
-    'site': 'https://hacker.fund/',
+  'jacob': {
+    'name': 'Jacob Jaber',
+    'title': 'CEO, Philz Coffee',
+    'logo': './assets/logos/2017/philz.png',
+    'uri': './assets/headshots/2017/JacobJaber.jpg',
+    'site': 'http://www.philzcoffee.com/',
   },
-  'kh': {
-    'name': 'Kevin Hale',
-    'title': 'Partner, Y Combinator',
-    'logo': './assets/logos/ycombinator.png',
-    'uri': './assets/headshots/kh.jpg',
-    'site': 'https://www.ycombinator.com/',
+  'frank': {
+    'name': 'Frank Donner',
+    'title': 'Founder and CEO, BLKBX Creative Group',
+    'logo': './assets/logos/2017/blkbxsolid.png',
+    'uri': './assets/headshots/2017/FrankDonner.jpg',
+    'site': 'http://blkbxcg.com/',
   },
-  'ma': {
-    'name': 'Mahbod Moghadam',
-    'title': 'Founder, Rap Genius',
-    'logo': './assets/logos/rapgenius.png',
-    'uri': './assets/headshots/ma.jpg',
-    'site': 'https://rap.genius.com/',
+  // 'tiffani': {
+  //   'name': 'Tiffani Ashley Bell',
+  //   'title': 'Executive Director at The Human Utility',
+  //   'logo': './assets/logos/2017/humanutility.png',
+  //   'uri': './assets/headshots/2017/TiffaniAshleyBell.jpg',
+  //   'site': 'https://www.detroitwaterproject.org/',
+  // },
+  'bryan': {
+    'name': 'Bryan Ciambella',
+    'title': 'Principal, B Capital',
+    'logo': './assets/logos/2017/bcapital.png',
+    'uri': './assets/headshots/2017/BryanCiambella.jpeg',
+    'site': 'http://www.bcapgroup.com/',
   },
-  'mh': {
-    'name': 'Michael Hartl',
-    'title': 'Author of Ruby on Rails Tutorial',
-    'logo': './assets/logos/ruby.png',
-    'uri': './assets/headshots/mh.jpg',
-    'site': 'https://www.railstutorial.org/',
+  'cassidy': {
+    'name': 'Cassidy Williams',
+    'title': 'Software Engineer, L4 Digital',
+    'logo': './assets/logos/2017/l4solid.png',
+    'uri': './assets/headshots/2017/CassidyWilliams.jpg',
+    'site': 'https://l4digital.com',
   },
-  'pb': {
-    'name': 'Peter Brack',
-    'title': 'Partner, Mucker Capital',
-    'logo': './assets/logos/mucker.png',
-    'uri': './assets/headshots/pb.jpg',
-    'site': 'http://www.muckercapital.com/',
-  },
-  'sf': {
-    'name': 'Shahin Farshchi',
-    'title': 'Partner, Lux Capital',
-    'logo': './assets/logos/lux.png',
-    'uri': './assets/headshots/sf.jpg',
-    'site': 'http://www.luxcapital.com/',
-  },
-  'sl': {
-    'name': 'Stephanie Lin',
-    'title': 'Founder, Sandbox: Startup Stories',
-    'logo': './assets/logos/eztable.png',
-    'uri': './assets/headshots/sl.jpg',
-    'site': 'https://en.eztable.com/',
-  },
-  'tl': {
-    'name': 'Tiffany Li',
-    'title': 'Investor, Anthos',
-    'logo': './assets/logos/anthos.png',
-    'uri': './assets/headshots/tl.jpg',
-    'site': 'https://anthoscapital.com/',
-  },
-  'tr': {
-    'name': 'Tess Rinearson',
-    'title': 'Software Engineer, Chain',
-    'logo': './assets/logos/chain.png',
-    'uri': './assets/headshots/tr.jpg',
-    'site': 'https://chain.com/',
-  },
-  'vlad': {
-    'name': 'Vladimir Tenev',
-    'title': 'CEO, Robinhood',
-    'logo': './assets/logos/robinhood.jpg',
-    'uri': './assets/headshots/vlad.png',
-    'site': 'https://robinhood.com/',
+  'john': {
+    'name': 'John Baldecchi',
+    'title': 'CEO, Digital Riot Media',
+    'logo': './assets/logos/2017/digitalriotmedia.jpg',
+    'uri': './assets/headshots/2017/JohnBaldecchi.jpg',
+    'site': 'http://www.digitalriotmedia.com/',
   },
 };
 

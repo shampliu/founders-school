@@ -151,6 +151,14 @@ class HeaderWrapper extends React.Component {
   }
 }
 
+function handleApply() {
+  window.location.href = "https://uclafoundersschool.typeform.com/to/G7VxEU";
+}
+
+function handleSponsor() {
+  window.location.href="mailto:uclafoundersschool@gmail.com?Subject=Thanks%20for%20your%20interest%20in%20Founders%20School%202016!";
+}
+
 class Description extends React.Component {
   render() {
     return (
@@ -159,7 +167,8 @@ class Description extends React.Component {
           <h1 className="anime-group">Tech Meets <span>Entrepreneurship</span></h1>
           <p className="anime-group">SoCal’s Largest University Entrepreneurship Conference</p>
           <h3 className="anime-group"><i className="fa fa-calendar-check-o"></i>&nbsp;MAY 7, 9AM - 7PM</h3>
-          <button className="anime-group">Apply</button> <button className="anime-group">Sponsor</button>
+          <button className="anime-group" onClick={handleApply}>Apply</button>
+          <button className="anime-group" onClick={handleSponsor}>Sponsor</button>
         </div>
       </div>
     )
