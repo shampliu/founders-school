@@ -33,21 +33,30 @@
     width: 45%;
     margin-bottom: 50px;
 
+
     @media #{$mobile} {
       width: 80%;
     }
 
     h3 {
       font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      font-size: 30px;
+      font-weight: 700;
+      color: $blue;
+      font-size: 25px;
       margin-bottom: 15px;
     }
 
     p {
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      font-size: 20px;
+      font-size: 17px;
+      letter-spacing: 0.6px;
+      line-height: 20px;
+
+      a {
+        color: $blue;
+        font-weight: 700;
+      }
     }
   }
 }

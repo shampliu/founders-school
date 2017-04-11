@@ -93,27 +93,36 @@
         }
       }
 
-      #where {
+      #where, #when {
         margin-top: 20px;
         width: 100%;
-        padding: 8px;
+        padding: 8px 18px;
         position: relative;
         z-index: 10;
+
+        p {
+          line-height: 20px;
+          letter-spacing: 0.6px;
+        }
+        
 
         @media #{$allPhones} {
           text-align: center;
         }
       }
 
-      #when {
-        width: 100%;
-        padding: 8px;
-        position: relative;
-        z-index: 10;
+      #where-title > span, #when-title > span {
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+        color: $blue;
+        background: yellow;
+        padding: 1px 7px;
+      }
 
-        @media #{$allPhones} {
-          text-align: center;
-        }
+      #when {
+        margin-top: 10px;
       }
 
       @media #{$allPhones} {
@@ -134,15 +143,30 @@
         font-size: 1.9em;
         color: $blue;
         margin-bottom: 20px;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
 
       p {
-        line-height: 20px;
+        letter-spacing: 0.6px;
+        line-height: 24px;
+
+        span {
+          font-weight: bold;
+          text-transform: uppercase;
+          background: yellow;
+          padding: 0 2px;
+          color: $blue;
+        }
       }
 
       blockquote {
         padding-left: 30px;
         padding-right: 30px;
+        letter-spacing: 1px;
+        line-height: 22px;
+        font-weight: 300;
       }
 
       #michaelcollins {

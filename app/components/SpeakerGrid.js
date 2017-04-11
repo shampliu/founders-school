@@ -3,102 +3,8 @@ import SpeakerTile from './SpeakerTile';
 import '../scss/SpeakerGrid.scss';
 // Can't mix import and module.exports
 
-/*
-  'initials': {
-    'name': 'name',
-    'title': 'position',
-    'logo': 'path_to_logo',
-    'uri': 'path_to_uri',
-    'site': 'link_to_company_website'
-  }
-*/
+
 const speakers = {
-  /*
-  'ak': {
-    'name': 'Ajay Kamat',
-    'title': 'Partner, Pejman Mar Ventures',
-    'logo': './assets/logos/pear.png',
-    'uri': './assets/headshots/2016/ak.jpg',
-    'site': 'https://www.pear.vc/',
-  },
-  'fb': {
-    'name': 'Forrest Browning',
-    'title': 'Co-founder, StacksWare',
-    'logo': './assets/logos/stacksware.png',
-    'uri': './assets/headshots/2016/fb.jpg',
-    'site': 'https://stacksware.com/',
-  },
-  'jb': {
-    'name': 'Justin Brezhnev',
-    'title': 'Executive Director, Hacker Fund',
-    'logo': './assets/logos/hackerfund.png',
-    'uri': './assets/headshots/2016/jb.jpg',
-    'site': 'https://hacker.fund/',
-  },
-  'kh': {
-    'name': 'Kevin Hale',
-    'title': 'Partner, Y Combinator',
-    'logo': './assets/logos/ycombinator.png',
-    'uri': './assets/headshots/2016/kh.jpg',
-    'site': 'https://www.ycombinator.com/',
-  },
-  'ma': {
-    'name': 'Mahbod Moghadam',
-    'title': 'Founder, Rap Genius',
-    'logo': './assets/logos/rapgenius.png',
-    'uri': './assets/headshots/2016/ma.jpg',
-    'site': 'https://rap.genius.com/',
-  },
-  'mh': {
-    'name': 'Michael Hartl',
-    'title': 'Author of Ruby on Rails Tutorial',
-    'logo': './assets/logos/ruby.png',
-    'uri': './assets/headshots/2016/mh.jpg',
-    'site': 'https://www.railstutorial.org/',
-  },
-  'pb': {
-    'name': 'Peter Brack',
-    'title': 'Partner, Mucker Capital',
-    'logo': './assets/logos/mucker.png',
-    'uri': './assets/headshots/2016/pb.jpg',
-    'site': 'http://www.muckercapital.com/',
-  },
-  'sf': {
-    'name': 'Shahin Farshchi',
-    'title': 'Partner, Lux Capital',
-    'logo': './assets/logos/lux.png',
-    'uri': './assets/headshots/2016/sf.jpg',
-    'site': 'http://www.luxcapital.com/',
-  },
-  'sl': {
-    'name': 'Stephanie Lin',
-    'title': 'Founder, Sandbox: Startup Stories',
-    'logo': './assets/logos/eztable.png',
-    'uri': './assets/headshots/2016/sl.jpg',
-    'site': 'https://en.eztable.com/',
-  },
-  'tl': {
-    'name': 'Tiffany Li',
-    'title': 'Investor, Anthos',
-    'logo': './assets/logos/anthos.png',
-    'uri': './assets/headshots/2016/tl.jpg',
-    'site': 'https://anthoscapital.com/',
-  },
-  'tr': {
-    'name': 'Tess Rinearson',
-    'title': 'Software Engineer, Chain',
-    'logo': './assets/logos/chain.png',
-    'uri': './assets/headshots/2016/tr.jpg',
-    'site': 'https://chain.com/',
-  },
-  'vlad': {
-    'name': 'Vladimir Tenev',
-    'title': 'CEO, Robinhood',
-    'logo': './assets/logos/robinhood.jpg',
-    'uri': './assets/headshots/2016/vlad.png',
-    'site': 'https://robinhood.com/',
-  },
-  */
   'eugene': {
     'name': 'Eugene Marinelli',
     'title': 'Co-founder and CTO, Blend',
@@ -127,13 +33,13 @@ const speakers = {
     'uri': './assets/headshots/2017/FrankDonner.jpg',
     'site': 'http://blkbxcg.com/',
   },
-  'tiffani': {
-    'name': 'Tiffani Ashley Bell',
-    'title': 'Executive Director at The Human Utility',
-    'logo': './assets/logos/2017/humanutility.png',
-    'uri': './assets/headshots/2017/TiffaniAshleyBell.jpg',
-    'site': 'https://www.detroitwaterproject.org/',
-  },
+  // 'tiffani': {
+  //   'name': 'Tiffani Ashley Bell',
+  //   'title': 'Executive Director at The Human Utility',
+  //   'logo': './assets/logos/2017/humanutility.png',
+  //   'uri': './assets/headshots/2017/TiffaniAshleyBell.jpg',
+  //   'site': 'https://www.detroitwaterproject.org/',
+  // },
   'bryan': {
     'name': 'Bryan Ciambella',
     'title': 'Principal, B Capital',

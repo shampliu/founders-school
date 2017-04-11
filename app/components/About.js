@@ -24,14 +24,14 @@ export default Watch(class About extends Component {
               <div className="explore-image" style={left_background_styles}></div>
             </div> 
             <div id="where">
-              <div id="where-title">Where:<br /><br /></div>
+              <div id="where-title"><span>Where</span><br /><br /></div>
               <span>
                 <p>Carnesale Commons</p>
                 <p>UCLA, Los Angeles, CA</p><br />
               </span>
             </div>
             <div id="when">
-              <div id="when-title">When:<br /><br /></div>
+              <div id="when-title"><span>When</span><br /><br /></div>
               <span>
                 <p>Sunday</p>
                 <p>May 7th, 2017</p><br />
@@ -42,7 +42,7 @@ export default Watch(class About extends Component {
               <h2>UCLA Founder's School</h2>
               <p>Founder's School is the largest university entrepreneurship conference in Southern California hosted by UCLA ACM and UPE. We are bringing together over 160 students, engineers, founders, investors, professionals, and professors to share their own stories and build meaningful connections.</p>
               <br />
-              <p>Our theme for this year is <b><i>EXPLORATION</i></b>. We believe in the following:</p>
+              <p>Our theme for this year is <span>exploration</span>. We believe in the following:</p>
               <br />
               <blockquote><i>"It's human nature to stretch, to go, to see, to understand. Exploration is not a choice really; it's an imperative."</i></blockquote>
               <blockquote id="michaelcollins">- Michael Collins</blockquote>

@@ -30,7 +30,7 @@ export default class Sponsors extends Component {
               </li>
               <li>
                 <h3>I have a question that's not answered here!</h3>
-                <p>Send us an <a href="mailto:uclafoundersschool@gmail.com">email</a> or message us on <a href="https://www.facebook.com/UCLAFoundersSchool/">Facebook and we'd be happy to answer</a>!</p>
+                <p>Send us an <a href="mailto:uclafoundersschool@gmail.com">email</a> or message us on <a href="https://www.facebook.com/UCLAFoundersSchool/">Facebook</a> and we'd be happy to answer!</p>
               </li>
               </ul>
             </div>
