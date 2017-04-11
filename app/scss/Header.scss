@@ -102,20 +102,24 @@
           }
 
           button {
-            border: none;
-            background: white;
+            border: 1px solid white;
+            background: transparent;
             width: 125px;
             height: 40px;
             font-size: 1.1em;
             text-transform: uppercase;
             font-weight: 500;
-            color: $blue;
+            color: white;
             padding: 7px 15px;
 
             margin-right: 10px;
+            @include prefix(transition, all 350ms ease-in-out);
 
             &:hover {
               cursor: pointer;
+              background: white;
+              color: $blue;
+              border: none;
             }
           }
         }
@@ -195,7 +199,6 @@
               width: 75px;
               height: 25px;
               font-size: 0.6em;
-
             }
           }
 

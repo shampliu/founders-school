@@ -152,11 +152,11 @@ class HeaderWrapper extends React.Component {
 }
 
 function handleApply() {
-  location.href = "https://uclafoundersschool.typeform.com/to/G7VxEU";
+  window.location.href = "https://uclafoundersschool.typeform.com/to/G7VxEU";
 }
 
 function handleSponsor() {
-  location.href="mailto:uclafoundersschool@gmail.com?Subject=Thanks%20for%20your%20interest%20in%20Founders%20School%202016!";
+  window.location.href="mailto:uclafoundersschool@gmail.com?Subject=Thanks%20for%20your%20interest%20in%20Founders%20School%202016!";
 }
 
 class Description extends React.Component {
