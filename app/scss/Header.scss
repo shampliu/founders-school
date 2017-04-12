@@ -32,6 +32,9 @@
       margin: 0 auto;
 
       display: flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+
       justify-content: space-around;
       .logo {
         z-index: 10;

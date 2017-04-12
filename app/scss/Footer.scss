@@ -6,9 +6,18 @@ $accent: #002c4e;
 footer.footer {
   background: $accent;
 
+  div.container:nth-child(1) {
+    padding-bottom: 0px;
+  }
+
   div.container {
+    display: -webkit-flex;
     display: flex;
-    flex-flow: row wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
     padding: 1.25em 1em;
     color: $text;
     line-height: 22px;
@@ -24,8 +33,10 @@ footer.footer {
         margin: 0 auto;
         flex: none;
       }
+      min-width: 50%;
       padding: 1em 0;
       flex: 1;
+      -webkit-flex-grow: 1;
       height: 80px;
       justify-content: flex-start;
       display: flex;
@@ -83,7 +94,9 @@ footer.footer {
         width: 100%;
         flex: none;
       }
+      min-width: 50%;
       flex: 1;
+      -webkit-flex-grow: 1;
       height: 80px;
       padding: 1em 0;
       display: flex;
@@ -135,7 +148,10 @@ footer.footer {
 
     .copyright {
       flex: 1 100%;
+      -webkit-flex-grow: 1;
+      -webkit-flex-basis: 100%;
       height: 40px;
+      min-width: 100%;
       border-top: 2px solid white;
       padding: 0.5em 0;
       font-family: 'Montserrat', sans-serif;
