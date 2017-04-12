@@ -49,7 +49,7 @@ const speakers = {
   },
   'cassidy': {
     'name': 'Cassidy Williams',
-    'title': 'Software Engineer, L4 Digital',
+    'title': 'Senior Software Engineer, L4 Digital',
     'logo': './assets/logos/2017/l4solid.png',
     'uri': './assets/headshots/2017/CassidyWilliams.jpg',
     'site': 'https://l4digital.com',
