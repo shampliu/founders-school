@@ -40,7 +40,7 @@ export default Watch(class About extends Component {
           </div>
           <div className={"right" + right_anim}>
               <h2>UCLA Founder's School</h2>
-              <p>Founder's School is the largest university entrepreneurship conference in Southern California hosted by UCLA ACM and UPE. We are bringing together over 160 students, engineers, founders, investors, professionals, and professors to share their own stories and build meaningful connections.</p>
+              <p>Founder's School is the largest university entrepreneurship conference in Southern California hosted by UCLA ACM and UPE. We are bringing together over 200 students, engineers, founders, investors, professionals, and professors to share their own stories and build meaningful connections.</p>
               <br />
               <p>Our theme for this year is <span>exploration</span>. We believe in the following:</p>
               <br />
