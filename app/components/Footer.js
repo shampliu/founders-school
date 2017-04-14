@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
             <div className="hosts">
               Hosted by
               <br/>
-              <strong>UCLA <a href="">ACM</a> & <a href="">UPE</a></strong>
+              <strong>UCLA <a href="http://www.uclaacm.com/#/">ACM</a> & <a href="https://upe.seas.ucla.edu/">UPE</a></strong>
             </div>
             <div className="social">
               <span className="connect">Connect with us</span>
