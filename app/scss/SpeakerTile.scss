@@ -57,22 +57,25 @@ $tileBorderRadius: 2px;
   &:hover .speaker-img:before,
   &:focus .speaker-img:before {
     display: block;
-    transition: all .6s;
-    -webkit-filter: grayscale(0%);
+    transition: all .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
   }
 
   &:hover .speaker-img {
-    transform: scale(1.05);
-    -webkit-filter: grayscale(100%);
+    transition: all .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -webkit-filter: grayscale(100%);
   }
 
   &:hover .hover {
-    -webkit-transition: .5s ease-out;
     transition: .5s ease-out;
+    -webkit-transition: .5s ease-out;
     z-index: 10;
     transform: scale(.85);
+    -webkit-transform: scale(.85);
     -webkit-filter: grayscale(0);
     opacity: 1;
     position: absolute;
@@ -85,8 +88,10 @@ $tileBorderRadius: 2px;
     background-size: contain !important;
 
     &.hover:before {
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      -webkit-transition: .5s ease-in-out;
       background-color: transparent;
-      width: 80%;
     }
   }
 
@@ -137,7 +142,9 @@ $tileBorderRadius: 2px;
     background-position: center !important;
     background-repeat: no-repeat !important;
     transform: scale(1);
-    transition: all .6s;
+    -webkit-transform: scale(1);
+    // transition: all .6s;
+    // -webkit-transition: all .6s;
 
     &:before {
       content: "";
