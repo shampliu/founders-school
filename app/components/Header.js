@@ -166,7 +166,7 @@ class Description extends React.Component {
         <div className="description">
           <h1 className="anime-group">Tech Meets <span>Entrepreneurship</span></h1>
           <p className="anime-group">SoCal’s Largest University Entrepreneurship Conference</p>
-          <h3 className="anime-group"><i className="fa fa-calendar-check-o"></i>&nbsp;MAY 7, 9AM - 7PM</h3>
+          <h3 className="anime-group"><i className="fa fa-calendar-check-o"></i>&nbsp;MAY 7, 9AM - 5PM</h3>
           <button className="anime-group" onClick={handleApply}>Apply</button>
           <button className="anime-group" onClick={handleSponsor}>Sponsor</button>
         </div>

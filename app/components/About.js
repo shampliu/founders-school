@@ -22,7 +22,7 @@ export default Watch(class About extends Component {
             <div className="explore-background">
               <div className="explore-gradient"></div>
               <div className="explore-image" style={left_background_styles}></div>
-            </div> 
+            </div>
             <div id="where">
               <div id="where-title"><span>Where</span><br /><br /></div>
               <span class="about-location-content">
@@ -33,7 +33,7 @@ export default Watch(class About extends Component {
             <div id="when">
               <div id="when-title"><span>When</span><br /><br /></div>
               <span class="about-location-content">
-                <p>Sunday</p>
+                <p>Sunday 9AM - 5PM</p>
                 <p>May 7th, 2017</p><br />
               </span>
             </div>
