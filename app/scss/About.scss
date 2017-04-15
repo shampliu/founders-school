@@ -103,8 +103,12 @@
         p {
           line-height: 20px;
           letter-spacing: 0.6px;
+
+          @media #{$mobile} {
+            margin-top: -5px;
+            font-size: 13px;
+          }
         }
-        
 
         @media #{$allPhones} {
           text-align: center;
@@ -123,6 +127,10 @@
 
       #when {
         margin-top: 10px;
+
+        @media #{$mobile} {
+          margin-top: -10px;
+        }
       }
 
       @media #{$allPhones} {

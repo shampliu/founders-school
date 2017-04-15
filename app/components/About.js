@@ -25,14 +25,14 @@ export default Watch(class About extends Component {
             </div> 
             <div id="where">
               <div id="where-title"><span>Where</span><br /><br /></div>
-              <span>
+              <span class="about-location-content">
                 <p>Carnesale Commons</p>
                 <p>UCLA, Los Angeles, CA</p><br />
               </span>
             </div>
             <div id="when">
               <div id="when-title"><span>When</span><br /><br /></div>
-              <span>
+              <span class="about-location-content">
                 <p>Sunday</p>
                 <p>May 7th, 2017</p><br />
               </span>
