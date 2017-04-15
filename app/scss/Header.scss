@@ -153,6 +153,17 @@
         display: flex;
         justify-content: space-around;
 
+        @media (max-width: 500px) {
+          ul.nav-links {
+            a {
+              font-size: 0.5em;
+              margin: 0 4px;
+              letter-spacing: 0.8px;
+            }
+          }
+
+        }
+
         ul.nav-links {
           height: 50px;
           line-height: 50px;
@@ -170,6 +181,8 @@
             font-weight: 400;
             letter-spacing: 2px;
             text-transform: uppercase;
+
+            
 
           }
         }
@@ -273,6 +286,7 @@
 
       .nav {
         .nav-inner {
+          width: 90%;
           ul.nav-links {
             a {
               font-size: 0.6em;
