@@ -12,13 +12,13 @@ const speakers = {
     'uri': './assets/headshots/2017/EugeneMarinelli.jpg',
     'site': 'https://blend.com',
   },
-  'ann': {
-    'name': 'Ann Wang',
-    'title': 'Co-founder and CEO @ Enrou',
-    'logo': './assets/logos/2017/enrou.jpg',
-    'uri': './assets/headshots/2017/AnnWang.jpg',
-    'site': 'https://enrou.co/',
-  },
+  // 'ann': {
+  // 'name': 'Ann Wang',
+  // 'title': 'Co-founder and CEO @ Enrou',
+  // 'logo': './assets/logos/2017/enrou.jpg',
+  // 'uri': './assets/headshots/2017/AnnWang.jpg',
+  // 'site': 'https://enrou.co/',
+  // },
   'jacob': {
     'name': 'Jacob Jaber',
     'title': 'CEO @ Philz Coffee',
