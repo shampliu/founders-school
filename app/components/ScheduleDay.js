@@ -6,14 +6,17 @@ let web_styles = {
     "first_sessions": {
       width: "29.9%"
     },
-    "second_sessions": {
-      width: "39.82%"
+    "30" : {
+      width: "5%"
     },
-    "keynote1": {
-      width: "9.86%"
+    "45": {
+      width: "7.5%",
+      marginRight: "2.5%"
+
     },
-    "keynote2": {
-      width: "9.5%"
+    "75" : {
+      width: "12.5%",
+      marginRight: "2.5%"
     }
   },
   "row2": {
@@ -65,11 +68,14 @@ export default class ScheduleDay extends React.Component {
       <div className="schedule-day">
         <div className="timeline-table">
           <div className="timeline-row">
-            <div className="timeline-block" style={active_style["row1"]["keynote1"]}>Keynote 1</div>
-            <div className="timeline-block" style={active_style["row1"]["first_sessions"]}>First Sessions</div>
+            <div className="timeline-block" style={active_style["row1"]["45"]}>Check-In</div>
+            <div className="timeline-block" style={active_style["row1"]["75"]}>Keynote</div>
+            <div className="timeline-block" style={active_style["row1"]["45"]}>Breakout Session #1</div>
             <div className="timeline-block">Lunch</div>
-            <div className="timeline-block" style={active_style["row1"]["second_sessions"]}>Second sessions</div>
-            <div className="timeline-block" style={active_style["row1"]["keynote2"]}>Keynote 2</div>
+            <div className="timeline-block" style={active_style["row1"]["45"]}>Second sessions</div>
+            <div className="timeline-block" style={active_style["row1"]["30"]}>Refreshments</div>
+            <div className="timeline-block">Closing Speaker</div>
+            <div className="timeline-block" style={active_style["row1"]["30"]}>Closing</div>
           </div>
           <div className="timeline-row">
             <div className="timeline-block" style={active_style["row2"]["first_sessions"]}>First Sessions</div>
