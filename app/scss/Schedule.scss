@@ -38,7 +38,7 @@
 .schedule-timeline {
   position: relative;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   height: 230px;
   max-width: 72.5em;
   font-size: 15px;
@@ -47,7 +47,6 @@
   overflow: visible;
 
   @media #{$iPadAndSmaller} {
-    width: 90%;
     height: 350px;
     font-size: 10px;
     margin-bottom: 50px;
