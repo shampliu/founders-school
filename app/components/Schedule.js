@@ -24,8 +24,6 @@ export default class Schedule extends React.Component {
                 <div className="hour-marker"><span>2</span></div>
                 <div className="hour-marker"><span>3</span></div>
                 <div className="hour-marker"><span>4</span></div>
-                <div className="hour-marker"><span>5</span></div>
-                <div className="hour-marker"><span>6</span></div>
               </div>
             </div>
           </div>

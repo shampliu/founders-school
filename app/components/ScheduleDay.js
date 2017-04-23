@@ -3,58 +3,73 @@ import '../scss/Schedule.scss';
 
 let web_styles = {
   "row1": {
-    "first_sessions": {
-      width: "29.9%"
+    "15": {
+      width: "3.125%",
+      textAlign: "center",
     },
-    "30" : {
-      width: "5%"
+    "30": {
+      width: "6.25%",
     },
     "45": {
-      width: "7.5%",
-      marginRight: "2.5%"
-
+      width: "9.375%",
     },
-    "75" : {
+    "60": {
       width: "12.5%",
-      marginRight: "2.5%"
-    }
+    },
+    "75": {
+      width: "15.625%",
+    },
+    "75+15gap": {
+      width: "15.625%",
+      marginRight: "3.125%",
+    },
   },
   "row2": {
     "first_sessions": {
-      marginLeft: "10%",
-      width: "29.97%"
+      marginLeft: "31.25%",
+      width: "9.375%",
     },
     "second_sessions": {
-      marginLeft: "10%",
-      width: "39.97%"
+      marginLeft: "18.75%",
+      width: "9.375%",
     },
-  }
+  },
+  "closing": <i className="fa fa-gift" title="Closing Statements"></i>,
 }
 
 let mobile_styles = {
   "row1": {
-    "first_sessions": {
-      height: "30%"
+    "15": {
+      height: "26px",
     },
-    "second_sessions": {
-      height: "40%"
+    "30": {
+      height: "26px",
     },
-    "keynote1": {
+    "45": {
+      height: "41px",
     },
-    "keynote2": {
-    }
+    "60": {
+      height: "52px",
+    },
+    "75": {
+      height: "65px",
+    },
+    "75+15gap": {
+      height: "65px",
+      marginBottom: "13px",
+    },
   },
   "row2": {
     "first_sessions": {
-      marginTop: "37.5px",
-      height: "30%",
+      marginTop: "130px",
+      height: "41px",
     },
     "second_sessions": {
-      marginTop: "37.5px",
-      height: "40%",
-      backgroundColor: "#C44C60",
+      marginTop: "78px",
+      height: "41px",
     },
-  }
+  },
+  "closing": "Closing",
 }
 
 export default class ScheduleDay extends React.Component {
@@ -68,18 +83,22 @@ export default class ScheduleDay extends React.Component {
       <div className="schedule-day">
         <div className="timeline-table">
           <div className="timeline-row">
-            <div className="timeline-block" style={active_style["row1"]["45"]}>Check-In</div>
-            <div className="timeline-block" style={active_style["row1"]["75"]}>Keynote</div>
-            <div className="timeline-block" style={active_style["row1"]["45"]}>Breakout Session #1</div>
-            <div className="timeline-block">Lunch</div>
-            <div className="timeline-block" style={active_style["row1"]["45"]}>Second sessions</div>
-            <div className="timeline-block" style={active_style["row1"]["30"]}>Refreshments</div>
-            <div className="timeline-block">Closing Speaker</div>
-            <div className="timeline-block" style={active_style["row1"]["30"]}>Closing</div>
+            <div className="timeline-block food" style={active_style["row1"]["60"]}>Check-In</div>
+            <div className="timeline-block talk" style={active_style["row1"]["75+15gap"]}>Keynote</div>
+            <div className="timeline-block breakout" style={active_style["row1"]["45"]}>Breakout Session #1</div>
+            <div className="timeline-block food" style={active_style["row1"]["75+15gap"]}>Lunch</div>
+            <div className="timeline-block breakout" style={active_style["row1"]["45"]}>Breakout Session #2</div>
+            <div className="timeline-block food" style={active_style["row1"]["30"]}>Break</div>
+            <div className="timeline-block talk" style={active_style["row1"]["75"]}>Closing Keynote</div>
+            <div className="timeline-block food" style={active_style["row1"]["15"]}>{active_style["closing"]}</div>
           </div>
           <div className="timeline-row">
-            <div className="timeline-block" style={active_style["row2"]["first_sessions"]}>First Sessions</div>
-            <div className="timeline-block" style={active_style["row2"]["second_sessions"]}>Second sessions</div>
+            <div className="timeline-block breakout" style={active_style["row2"]["first_sessions"]}>Breakout Session #1</div>
+            <div className="timeline-block breakout" style={active_style["row2"]["second_sessions"]}>Breakout Session #2</div>
+          </div>
+          <div className="timeline-row">
+            <div className="timeline-block breakout" style={active_style["row2"]["first_sessions"]}>Breakout Session #1</div>
+            <div className="timeline-block breakout" style={active_style["row2"]["second_sessions"]}>Breakout Session #2</div>
           </div>
         </div>
       </div>
