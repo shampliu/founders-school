@@ -12,13 +12,13 @@ const speakers = {
     'uri': './assets/headshots/2017/EugeneMarinelli.jpg',
     'site': 'https://blend.com',
   },
-  // 'ann': {
-  // 'name': 'Ann Wang',
-  // 'title': 'Co-founder and CEO @ Enrou',
-  // 'logo': './assets/logos/2017/enrou.jpg',
-  // 'uri': './assets/headshots/2017/AnnWang.jpg',
-  // 'site': 'https://enrou.co/',
-  // },
+  'jaclyn': {
+    'name': 'Jaclyn Fu',
+    'title': 'Lead Product Marketing @ Conversocial',
+    'logo': './assets/logos/2017/conversocial.png',
+    'uri': './assets/headshots/2017/JaclynFu.png',
+    'site': 'http://www.conversocial.com/',
+  },
   'jacob': {
     'name': 'Jacob Jaber',
     'title': 'CEO @ Philz Coffee',
@@ -33,13 +33,6 @@ const speakers = {
     'uri': './assets/headshots/2017/FrankDonner.jpg',
     'site': 'http://blkbxcg.com/',
   },
-  // 'tiffani': {
-  //   'name': 'Tiffani Ashley Bell',
-  //   'title': 'Executive Director at The Human Utility',
-  //   'logo': './assets/logos/2017/humanutility.png',
-  //   'uri': './assets/headshots/2017/TiffaniAshleyBell.jpg',
-  //   'site': 'https://www.detroitwaterproject.org/',
-  // },
   'bryan': {
     'name': 'Bryan Ciambella',
     'title': 'Principal @ B Capital',
