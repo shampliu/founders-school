@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import '../scss/Sponsors.scss';
 
-
-
 export default class Sponsors extends Component {
 
   render() {
@@ -17,6 +15,7 @@ export default class Sponsors extends Component {
               <div className="sponsor-tile" id="reslife"><a href="https://reslife.ucla.edu/"><img src="./assets/sponsors/reslife.png"/></a></div>
             </div>
             <div className="sponsors-grid lower">
+              <div className="sponsor-tile" id="ucla-edi"><a href="https://equity.ucla.edu/"><img src="./assets/sponsors/uclaEDI.png"/></a></div>
               <div className="sponsor-tile"><a href="http://www.uclaacm.com/#/"><img src="./assets/sponsors/acm.png"/></a></div>
               <div className="sponsor-tile"><a href="https://upe.seas.ucla.edu/"><img src="./assets/sponsors/upe.png"/></a></div>
             </div>

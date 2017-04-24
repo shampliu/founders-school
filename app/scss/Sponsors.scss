@@ -58,3 +58,11 @@
     }
   }
 }
+
+#ucla-edi {
+  img {
+    @media #{$mobile} {
+      max-height: 40px;
+    }
+  }
+}
