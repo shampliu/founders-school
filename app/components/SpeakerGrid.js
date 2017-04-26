@@ -14,10 +14,10 @@ const speakers = {
   },
   'jaclyn': {
     'name': 'Jaclyn Fu',
-    'title': 'Lead Product Marketing @ Conversocial',
-    'logo': './assets/logos/2017/conversocial.png',
+    'title': 'Founder @ Pepper Bra',
+    'logo': './assets/logos/2017/pepperbra.jpg',
     'uri': './assets/headshots/2017/JaclynFu.png',
-    'site': 'http://www.conversocial.com/',
+    'site': 'https://www.kickstarter.com/projects/530554631/pepper-bra-for-small-boobs',
   },
   'jacob': {
     'name': 'Jacob Jaber',
@@ -26,6 +26,13 @@ const speakers = {
     'uri': './assets/headshots/2017/JacobJaber.jpg',
     'site': 'http://www.philzcoffee.com/',
   },
+  'angelia': {
+    'name': 'Angelia Trinidad',
+    'title': 'Founder @ Passion Planner',
+    'logo': './assets/logos/2017/PassionPlanner.png',
+    'uri': './assets/headshots/2017/AngeliaTrinidad.jpg',
+    'site': 'http://www.passionplanner.com/',
+  },
   'frank': {
     'name': 'Frank Donner',
     'title': 'Founder and CEO @ BLKBX Creative Group',
@@ -33,19 +40,19 @@ const speakers = {
     'uri': './assets/headshots/2017/FrankDonner.jpg',
     'site': 'http://blkbxcg.com/',
   },
-  'bryan': {
-    'name': 'Bryan Ciambella',
-    'title': 'Principal @ B Capital',
-    'logo': './assets/logos/2017/bcapital.png',
-    'uri': './assets/headshots/2017/BryanCiambella.jpeg',
-    'site': 'http://www.bcapgroup.com/',
-  },
   'cassidy': {
     'name': 'Cassidy Williams',
     'title': 'Senior Software Engineer @ L4 Digital',
     'logo': './assets/logos/2017/l4solid.png',
     'uri': './assets/headshots/2017/CassidyWilliams.jpg',
     'site': 'https://l4digital.com',
+  },
+  'bryan': {
+    'name': 'Bryan Ciambella',
+    'title': 'Principal @ B Capital',
+    'logo': './assets/logos/2017/bcapital.png',
+    'uri': './assets/headshots/2017/BryanCiambella.jpeg',
+    'site': 'http://www.bcapgroup.com/',
   },
   'john': {
     'name': 'John Baldecchi',
