@@ -7,17 +7,17 @@ import '../scss/SpeakerGrid.scss';
 const speakers = {
   'eugene': {
     'name': 'Eugene Marinelli',
-    'title': 'Co-founder and CTO @ Blend',
+    'title': 'Co-Founder and CTO @ Blend',
     'logo': './assets/logos/2017/bsolid.png',
     'uri': './assets/headshots/2017/EugeneMarinelli.jpg',
     'site': 'https://blend.com',
   },
-  'jaclyn': {
-    'name': 'Jaclyn Fu',
-    'title': 'Founder @ Pepper Bra',
-    'logo': './assets/logos/2017/pepperbra.jpg',
-    'uri': './assets/headshots/2017/JaclynFu.png',
-    'site': 'https://www.kickstarter.com/projects/530554631/pepper-bra-for-small-boobs',
+  'angelia': {
+    'name': 'Angelia Trinidad',
+    'title': 'Founder and CEO @ Passion Planner',
+    'logo': './assets/logos/2017/PassionPlanner.png',
+    'uri': './assets/headshots/2017/AngeliaTrinidad.jpg',
+    'site': 'http://www.passionplanner.com/',
   },
   'jacob': {
     'name': 'Jacob Jaber',
@@ -26,12 +26,12 @@ const speakers = {
     'uri': './assets/headshots/2017/JacobJaber.jpg',
     'site': 'http://www.philzcoffee.com/',
   },
-  'angelia': {
-    'name': 'Angelia Trinidad',
-    'title': 'Founder @ Passion Planner',
-    'logo': './assets/logos/2017/PassionPlanner.png',
-    'uri': './assets/headshots/2017/AngeliaTrinidad.jpg',
-    'site': 'http://www.passionplanner.com/',
+  'jaclyn': {
+    'name': 'Jaclyn Fu',
+    'title': 'Co-Founder @ Pepper',
+    'logo': './assets/logos/2017/pepperbra.jpg',
+    'uri': './assets/headshots/2017/JaclynFu.jpg',
+    'site': 'https://www.my-pepper.com/',
   },
   'frank': {
     'name': 'Frank Donner',
