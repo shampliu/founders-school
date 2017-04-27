@@ -32,6 +32,12 @@ export default class Sponsors extends Component {
                 <h3>I have a question that's not answered here!</h3>
                 <p>Send us an <a href="mailto:uclafoundersschool@gmail.com">email</a> or message us on <a href="https://www.facebook.com/UCLAFoundersSchool/">Facebook</a> and we'd be happy to answer!</p>
               </li>
+              <li>
+                <h3>I signed up to donate swipes, how does it affect me?</h3>
+                <p>Submission of this form constitutes an e-signature giving your consent for UCLA Dining Services to remove your chosen number of swipes from your meal board plan.</p>
+                <br />
+                <p>If you have a regular meal plan and donate a swipe you will not be able to swipe during the corresponding meal period the day of the event.</p>
+              </li>
               </ul>
             </div>
           </div>
