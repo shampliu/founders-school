@@ -47,6 +47,13 @@ const speakers = {
     'uri': './assets/headshots/2017/CassidyWilliams.jpg',
     'site': 'https://l4digital.com',
   },
+  'lina': {
+    'name': 'Lina Chen',
+    'title': 'Co-Founder and CEO @ Nix Hydra',
+    'logo': './assets/logos/2017/nixhydra.png',
+    'uri': './assets/headshots/2017/LinaChen.jpg',
+    'site': 'http://www.nixhydra.com/',
+  },
   'bryan': {
     'name': 'Bryan Ciambella',
     'title': 'Principal @ B Capital',
