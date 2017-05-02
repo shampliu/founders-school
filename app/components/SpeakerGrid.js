@@ -61,13 +61,6 @@ const speakers = {
     'uri': './assets/headshots/2017/BryanCiambella.jpeg',
     'site': 'http://www.bcapgroup.com/',
   },
-  'john': {
-    'name': 'John Baldecchi',
-    'title': 'CEO @ Digital Riot Media',
-    'logo': './assets/logos/2017/digitalriotmedia.jpg',
-    'uri': './assets/headshots/2017/JohnBaldecchi.jpg',
-    'site': 'http://www.digitalriotmedia.com/',
-  },
 };
 
 function createGrid() {
